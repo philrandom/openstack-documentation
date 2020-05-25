@@ -11,7 +11,7 @@ Premièrement chaque composant effectue :
 Ne seront détaillé que les composants principaux par ordre d'apparition. 
 
 
-[//]: src image : https://www.openstack.org/software/
+[//]: <> (src image : https://www.openstack.org/software/)
 ![title](assets/modules.svg)
 
 
