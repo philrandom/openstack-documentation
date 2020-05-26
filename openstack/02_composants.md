@@ -28,7 +28,7 @@ Nova et Swift sont les premiers modules écrits. Nova gere
 ## Keystone
 |catégorie  		|fonction							|
 |---				|---								|
-|service			|identification						| 
+|service partagé	|identification						| 
 
 De manière simplifié Keystone est un Active Directory fonctionnant sur un principe equivalent de Kerberos avec jeton (renvoyé par API).
 Keystone gère l'accès des utilisateur aux différentes instances.
@@ -48,6 +48,26 @@ Plusieurs méthode d'authentification plug-n-play sont disponible :
 Chaque utilisateur est liée à un `project` ou également appelé `tenant` (OpenStack Fundation tend à unifier et renommer vers `project`). 
 L'utilisateur peut inviter d'autre utilisateur à son projet.
 L'utilisateur peut avoir une liste d'utilisation restreinte des modules.  
+
+## Glance
+|catégorie  		|fonction							|
+|---				|---								|
+|service partagé	|management d'image pour VM			|
+
+Ce module à pour principal objectif de charger une image base sur une VM. Des images pre-built officielles sont [disponnible](https://docs.openstack.org/image-guide/obtain-images.html). 
+
+| OS/distribution 	|  lien | login |
+|-----------------	|-------|-------|
+|CentOS				| [6](http://cloud.centos.org/centos/6/images/)|centos|
+|					| [7](http://cloud.centos.org/centos/7/images/)|centos|
+|Debian				| [current](http://cdimage.debian.org/cdimage/openstack/)|debian|
+|Fedora				| [latest](https://alt.fedoraproject.org/cloud/)		|fedora|
+|Ubuntu				| [bionic](https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img)|ubuntu|
+|Suse				| [JeOS](https://software.opensuse.org/distributions/leap#JeOS-ports)|opensuse|
+|RedHat				| [RHEL 7 KVM](https://access.redhat.com/downloads/content/69/ver=/rhel---7/x86_64/product-downloads)|cloud-user|
+|Windows			| [Cloud](https://cloudbase.it/windows-cloud-images/)||
+
+
 
 ## Swift
 
