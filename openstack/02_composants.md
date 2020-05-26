@@ -68,13 +68,15 @@ Ce module à pour principal objectif de charger une image base sur une VM. Des i
 |Windows			| [Cloud](https://cloudbase.it/windows-cloud-images/)||
 
 
+> **Attention** une des images de base proposé est CirrOS. **Il ne doit pas être utilisé en prod.** Uniquement utilisé en test car sa taille est très légère 12.7 MB.
+
 
 ## Swift
 
 - stockage d'objet orienté document. (type cloud google drive)
 - replication
 
-_Attention_ eventual consistency
+> **Attention** eventual consistency
 
 ## Barbican
 - stockage de clef de chiffrage
