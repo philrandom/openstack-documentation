@@ -4,6 +4,7 @@
 
 > Clouds are pools of virtual ressources (such as raw processing power, memory, network, storage, or cloud-based applications) orchestrated by management and automation software -- RedHat
 
+efficiency scalability cost
 
 ## Qu'est ce que OpenStack ?
 
