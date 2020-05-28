@@ -8,7 +8,12 @@ Lorsqu'une équipe a le besoin de travailler sur un projet comportant l'utilisat
 - structuration du réseaux
 - allocation de ressources
 
+L'objectifs serait d'éviter de passer par le quartier DSI, pour un gain de temps et d'autonomie.
 
+3 grands principes doivent être respectés :
+- KISS (Keep it simple stupid) : mise sur la simplicité à tout les niveau (documentation, interface user-friendly, architecture) 
+- User Empowerement : permettre une plus grande autonomie à l'utilisateur
+- security focus : éviter les escalations de privilège et éviter les attaques extérieures
 
 
 
