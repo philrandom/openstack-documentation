@@ -38,3 +38,5 @@ Plusieurs méthodes d'authentification plug-n-play sont disponibles :
 - Kerberos (docs [Objectif Libre (une entreprise officielle dev d'OpenStack)](https://www.objectif-libre.com/en/blog/2018/02/26/kerberos-authentication-for-keystone/))
 
 
+
+

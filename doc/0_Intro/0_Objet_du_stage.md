@@ -24,7 +24,7 @@ Utilisation d'OpenStack en tant que Infrastructure-as-a-Service (IaaS) :
 - Gestion des instances/projets de manière user-friendly (Horizon)
 - Gestion des ressources (Nova)
 - Facturage d'utilisation (Ceilo Meter)
-- Definision des plages ip (Neutron)
+- Définition des plages ip (Neutron)
 - Firewall (Neutron)
 - Ajout sécurité 
 
