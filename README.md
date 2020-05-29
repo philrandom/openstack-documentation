@@ -1,7 +1,7 @@
 # Intro
 
 ## Objet du stage
-si oui ou non le client à intérêt d'utiliser os ? Définissions de la pertinence d'os pour l'université de Limoges ?
+si oui ou non le client à intérêt d'utiliser os ? Définition de la pertinence d'os pour l'université de Limoges ?
 
 ## Analyse du besoin
 Quels sont ses besoins ? Ses outils ? Parc ? Budget ? Formation ?
