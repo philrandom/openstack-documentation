@@ -2,8 +2,10 @@
 
 ## Client
 
-Université de Limoges alias **unilim**.
-2 rue
+Université de Limoges *alias* **unilim**
+33 rue François Mitterrand
+BP 23204
+87032 Limoges - France
 
 
 DSI (Direction des Système d'Information)
@@ -23,21 +25,3 @@ Pour ce faire, trois grands principes devront être respectés :
 - KISS (Keep it simple stupid) : simplicité à tous les niveaux (documentation, interface user-friendly, architecture)
 - User Empowerement : donner une plus grande autonomie à l'utilisateur
 - Security focus : sécuriser l'environnement (parrer les attaques extérieurs)
-
-
-
-# Cahier des charges
-
-Utilisation d'OpenStack en tant que Infrastructure-as-a-Service (IaaS) :
-
-- Gestion des instances/projets de manière user-friendly (Horizon)
-- Gestion des ressources (Nova)
-- Facturage d'utilisation (Ceilo Meter)
-- Définition des plages ip (Neutron)
-- Firewall (Neutron)
-- Ajout sécurité
-
-
-# Question
-
-**Définir la pertinence de l'utilisation future d'OpenStack pour l'université de Limoges ?**
