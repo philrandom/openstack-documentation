@@ -10,23 +10,22 @@ _Vocabulaire_ : les **core modules** sont les modules définis comme essentiel. 
 Ici seront présenté les modules de manière d'apparition dans une architecture simple et minimaliste.
 
 ```
-	Horizon
-		|
-		|
-		|		Neutron		Cinder		Nova		Glance		Swift
-		|		|			|			|			|			|
-		|		|			|			|			|			|
-		|		|			|			|			|			|
-		|		|			|			|			|			|
-	Keystone──────────────────────────────────────────────────────────
+  Horizon
+    |
+    |
+    |       Neutron   Cinder    Nova    Glance    Swift
+    |       |         |         |       |         |
+    |       |         |         |       |         |
+    |       |         |         |       |         |
+  Keystone─────────────────────────────────────────
 ```
 
 ## Keystone
 |catégorie  		|fonction							|
 |---				|---								|
-|service partagé	|identification						| 
+|service partagé	|identification						|
 
-Ce module est utilisé pour l'authentification, c'est la première étape de l'utilisateur. 
+Ce module est utilisé pour l'authentification, c'est la première étape de l'utilisateur.
 
 De manière résumé Keystone fonctionne comme un Active Directory ou Kerberos. En effet l'utilisateur rentre ses identifiants. Une fois validé, un `token` (jeton) lui ais donné. Ce `token` se présente sous la forme d'une url (en backend).
 
@@ -36,7 +35,3 @@ Plusieurs méthodes d'authentification plug-n-play sont disponibles :
 - Apache REMOTE_USER (docs [OpenStack](https://docs.openstack.org/keystone/pike/advanced-topics/external-auth.html))
 - LDAP (docs [ubuntu](https://ubuntu.com/kubernetes/docs/ldap) ─ [OpenStack](https://docs.openstack.org/keystone/pike/admin/identity-integrate-with-ldap.html))
 - Kerberos (docs [Objectif Libre (une entreprise officielle dev d'OpenStack)](https://www.objectif-libre.com/en/blog/2018/02/26/kerberos-authentication-for-keystone/))
-
-
-
-
