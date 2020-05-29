@@ -2,13 +2,13 @@
 
 ## Client
 
-Université de Limoges *alias* **unilim**
-33 rue François Mitterrand
-BP 23204
-87032 Limoges - France
+Université de Limoges *alias* **unilim**  
+33 rue François Mitterrand  
+BP 23204  
+87032 Limoges - France  
 
 
-DSI (Direction des Système d'Information)
+DSI (Direction des Système d'Information)  
 Xavier Montagutelli
 
 ## Objectifs client
