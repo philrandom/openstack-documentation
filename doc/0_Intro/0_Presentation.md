@@ -23,5 +23,7 @@ Pour exemple, une équipe ayant besoin de travailler sur un projet donné, fait 
 
 Pour ce faire, trois grands principes devront être respectés :
 - KISS (Keep it simple stupid) : simplicité à tous les niveaux (documentation, interface user-friendly, architecture)
-- User Empowerement : donner une plus grande autonomie à l'utilisateur
+- User Empowerement : donner une plus grande autonomie à l'utilisateur -- un "User" est :
+  -  soit un informaticien déployant son projet
+  -  soit un "end user" de type enseignant-chercheur
 - Security focus : sécuriser l'environnement (parer les attaques extérieurs)
