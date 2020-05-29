@@ -17,11 +17,11 @@ Le quartier de la Direction des Système d'Information de l'université de Limog
 
 
 Pour exemple, une équipe ayant besoin de travailler sur un projet donné, fait appel au DSI, acteur incontournable dans ce déploiement. Ce dernier configure alors l'environnement, qui comporte les tâches suivantes (non exhaustive) :
-- la gestion des authorisations des utilisateurs
+- la gestion des autorisations des utilisateurs
 - la structuration du réseaux
 - l'allocation de ressources
 
 Pour ce faire, trois grands principes devront être respectés :
 - KISS (Keep it simple stupid) : simplicité à tous les niveaux (documentation, interface user-friendly, architecture)
 - User Empowerement : donner une plus grande autonomie à l'utilisateur
-- Security focus : sécuriser l'environnement (parrer les attaques extérieurs)
+- Security focus : sécuriser l'environnement (parer les attaques extérieurs)

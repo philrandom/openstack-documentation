@@ -26,7 +26,7 @@ Il existe trois types de cloud IaaS (Infrastructure as a Service), PaaS (Plate-f
 
 | Licence | Language | OS requis |
 |---------|----------|-----------|
-| Apache2.0| Python | GNU/Linux |
+| Apache 2.0| Python | GNU/Linux |
 
 
 OpenStack est un système de **cloud computing** qui aspirent à l'automatisation.
@@ -45,4 +45,6 @@ En mars 2006 Amazon lance officiellement **AWS** (Amazon Web Services)
 En 2010, **Rackspace** (entreprise américaine specialisé dans le cloud computing) prit conscience de la concurrence d'AWS. Pour éviter de se faire dépasser, Rackspace s'est lancé dans la restructuration et la réécriture de son cloud.  
 Au même moment la **NASA** eu besoin d'un cloud de stockage, pour stocker leurs images satelites de haute définition.  
 
-> The OpenStack project intended to help organizations offer cloud-computing services running on standard hardware. The community's first official release, code-named Austin, appeared three months later on 21 October 2010, with plans to release regular updates of the software every few months. The early code came from NASA's Nebula platform as well as from Rackspace's Cloud Files platform. The original cloud architecture was designed by the NASA Ames Web Manager, Megan A. Eskey, and was a 2009 open source architecture called OpenNASA v2.0. The cloud stack and open stack modules were merged and released as open source by the NASA Nebula team in concert with Rackspace. 
+> The OpenStack project intended to help organizations offer cloud-computing services running on standard hardware. The community's first official release, code-named Austin, appeared three months later on 21 October 2010, with plans to release regular updates of the software every few months. The early code came from NASA's Nebula platform as well as from Rackspace's Cloud Files platform. The original cloud architecture was designed by the NASA Ames Web Manager, Megan A. Eskey, and was a 2009 open source architecture called OpenNASA v2.0. The cloud stack and open stack modules were merged and released as open source by the NASA Nebula team in concert with Rackspace.
+
+Par la suite plusieurs entreprises ont rejoint le projet pour le développement. Les premières furent les fondation attaché à différentes distributions Linux tel que Cannonical (ubuntu), Debian, SUSE (OpenSUSE)... Courant 2012, la fondation Openstack comprenait 540 entreprises qui œuvrent pour son développement.
