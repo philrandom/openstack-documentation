@@ -4,9 +4,6 @@ Quels sont ses besoins ? Ses outils ? Parc ? Budget ? Formation ?
 
 Automatisation d'infrastructures dont une des solutions serait openstack
 
-## Ressources
-
-2 * Dell MX 7000 : 49 coeurs overclock
 
 ## Cahier des charges
 
