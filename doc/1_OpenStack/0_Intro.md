@@ -19,7 +19,8 @@
 Il existe trois types de cloud :
 - IaaS (Infrastructure as a Service)
 - PaaS (Plate-form as a Service)
-- SaaS (Software as a Service)  
+- SaaS (Software as a Service)
+
 Ici nous étudirons exclusivement l'IaaS qui répond particulièrement au besoin définit en `doc/0_intro/`.
 
 > L'IaaS contient les éléments de base pour le cloud computing. Elle propose généralement un accès à des fonctionnalités réseau, des ordinateurs (virtuels ou sur du matériel dédié) et à un espace de stockage de données. Elle vous offre le plus haut niveau de flexibilité et de contrôle de gestion de vos ressources informatiques. Cela s'apparente beaucoup aux ressources informatiques existantes que de nombreux départements informatiques et développeurs connaissent. ─ AWS
