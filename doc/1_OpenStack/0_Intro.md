@@ -16,7 +16,12 @@
 |Agilité|  Le cloud vous donne un accès facile à un large éventail de technologies, ce qui vous permet d'innover plus rapidement et de créer pratiquement tout ce que vous pouvez imaginer. Vous pouvez rapidement utiliser les ressources dont vous avez besoin, des services d'infrastructure tels que le calcul, le stockage et les bases de données à l'Internet des objets, en passant par le machine learning, les lacs de données et l'analyse, etc. <br><br>Vous pouvez déployer des services technologiques en quelques minutes et passer de l'idée à la mise en place de plusieurs ordres de grandeur plus rapidement. Cela vous donne la possibilité d'expérimenter, de tester de nouvelles idées pour différencier les expériences client et faire évoluer votre entreprise. |
 | Élasticité| Grâce au cloud computing, il n'est pas nécessaire de surapprovisionner les ressources en amont pour gérer les pics d'activité futurs. Au lieu de cela, vous allouez la quantité de ressources dont vous avez réellement besoin. Vous pouvez mettre à l'échelle instantanément ces ressources pour augmenter et diminuer la capacité en fonction de l'évolution des besoins de votre entreprise.|
 
-Il existe trois types de cloud IaaS (Infrastructure as a Service), PaaS (Plate-form as a Service) et SaaS (Software as a Service).
+Il existe trois types de cloud :
+- IaaS (Infrastructure as a Service)
+- PaaS (Plate-form as a Service)
+- SaaS (Software as a Service)
+
+Ici nous étudirons exclusivement l'IaaS qui répond particulièrement au besoin définit en `doc/0_intro/`.
 
 > L'IaaS contient les éléments de base pour le cloud computing. Elle propose généralement un accès à des fonctionnalités réseau, des ordinateurs (virtuels ou sur du matériel dédié) et à un espace de stockage de données. Elle vous offre le plus haut niveau de flexibilité et de contrôle de gestion de vos ressources informatiques. Cela s'apparente beaucoup aux ressources informatiques existantes que de nombreux départements informatiques et développeurs connaissent. ─ AWS
 
