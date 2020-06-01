@@ -49,7 +49,7 @@ Les ressources sont définis lors de la definition du `project` et de `domain`
 ### Role
 Le rôle définit le niveau d'autorisation, il existe les rôles suivants :
 - `admin` qui est le super utilisateur de tout l'ensemble OpenStack
-- `\_member\_` un utilisateur lambda avec peu de droits
+- `_member_` un utilisateur lambda avec peu de droits
 - d'autre rôle peuvent être créer notement en tant que Operateur d'un module (ex: SwiftOperator)
 
 
