@@ -44,6 +44,34 @@ Il existe [deux types de `token`](https://docs.openstack.org/keystone/pike/admin
 
 ### Identification 
 Le fonctionnement de l'identification se comporte de tel manière : les `users` appartiennent à un `groups` qui appartient à un `domain`. Les `projects` appartiennent à un `domains`.
+Les ressources sont définis lors de la definition du `project` et de `domain`
 
 ### Role
+Le rôle définit le niveau d'autorisation, il existe les rôles suivants :
+- `admin` qui est le super utilisateur de tout l'ensemble OpenStack
+- `\_member\_` un utilisateur lambda avec peu de droits
+- d'autre rôle peuvent être créer notement en tant que Operateur d'un module (ex: SwiftOperator)
+
+
+## Glance
+|catégorie  		|fonction							|
+|---				|---								|
+|service partagé	|management d'image pour VM			|
+
+Ce module à pour principal objectif de charger une image base sur une VM. Glance ne stock pas les images; les images peuvent être stocké simplement sur le `filesystem` ou via Swift (module détaillé plus bas).Des images pre-built officielles sont [disponnible](https://docs.openstack.org/image-guide/obtain-images.html). 
+
+| OS/distribution 	|  lien | login |
+|-----------------	|-------|-------|
+|CentOS				| [6](http://cloud.centos.org/centos/6/images/)|centos|
+|					| [7](http://cloud.centos.org/centos/7/images/)|centos|
+|Debian				| [current](http://cdimage.debian.org/cdimage/openstack/)|debian|
+|Fedora				| [latest](https://alt.fedoraproject.org/cloud/)		|fedora|
+|Ubuntu				| [bionic](https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img)|ubuntu|
+|Suse				| [JeOS](https://software.opensuse.org/distributions/leap#JeOS-ports)|opensuse|
+|RedHat				| [RHEL 7 KVM](https://access.redhat.com/downloads/content/69/ver=/rhel---7/x86_64/product-downloads)|cloud-user|
+|Windows			| [Cloud](https://cloudbase.it/windows-cloud-images/)||
+
+
+> **Attention** une des images de base proposé est CirrOS. **Il ne doit pas être utilisé en prod pour des raison de sécurité.** Uniquement utilisé en test car sa taille est très légère 12.7 MB.
+
 
