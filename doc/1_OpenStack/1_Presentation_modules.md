@@ -74,4 +74,5 @@ Ce module à pour principal objectif de charger une image base sur une VM. Glanc
 
 > **Attention** une des images de base proposé est CirrOS. **Il ne doit pas être utilisé en prod pour des raison de sécurité.** Uniquement utilisé en test car sa taille est très légère 12.7 MB.
 
+# Nova
 

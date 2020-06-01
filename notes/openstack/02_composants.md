@@ -41,7 +41,7 @@ Plusieurs méthode d'authentification plug-n-play sont disponible :
 - Kerberos
 
 **Role** : 
-- Il existe `admin` qui est le super utilisateur de tout l'ensemble OpenStack. 
+- Il existe `admin` qui est le super utilisateur de tout l'ensemble OpenStack.
 - \_member\_
 - d'autre role peuvent être créer notement en tant que Operateur d'un module (ex: SwiftOperator)
 
