@@ -38,7 +38,7 @@ OpenStack est un système de **cloud computing** qui aspirent à l'automatisatio
 
 ### Historique
 
-En mars 2006 Amazon lance officiellement **AWS** (Amazon Web Services)
+En mars 2006, Amazon lance officiellement **AWS** (Amazon Web Services)
 
 > Amazon Web Services (AWS) est une division du groupe américain de commerce électronique Amazon, spécialisée dans les services de cloud computing à la demande pour les entreprises et particuliers. En 2015, AWS génère 7 % du chiffre d'affaires d'Amazon et représente la première source de profit de l'entreprise.
 

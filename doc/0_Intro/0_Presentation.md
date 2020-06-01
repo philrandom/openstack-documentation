@@ -9,7 +9,7 @@ BP 23204
 
 
 DSI (Direction des Système d'Information)  
-Xavier Montagutelli
+Xavier Montagutelli ─ Hubert Mercier
 
 ## Objectifs client
 
