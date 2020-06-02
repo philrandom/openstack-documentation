@@ -7,7 +7,7 @@ _Vocabulaire_ : les **core modules** sont les modules définis comme essentiel. 
 [//]: <> (src image : https://www.openstack.org/software/)
 ![title](../../annexe/assets/modules.svg)
 
-Ici seront présenté les modules de manière d'apparition dans une architecture simple et minimaliste.
+Ici seront présenté les modules dans l'ordre d'apparition selon une architecture simple et minimaliste.
 
 ```
   Horizon
