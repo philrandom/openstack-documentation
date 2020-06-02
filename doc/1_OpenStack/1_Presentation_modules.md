@@ -74,5 +74,35 @@ Ce module à pour principal objectif de charger une image base sur une VM. Glanc
 
 > **Attention** une des images de base proposé est CirrOS. **Il ne doit pas être utilisé en prod pour des raison de sécurité.** Uniquement utilisé en test car sa taille est très légère 12.7 MB.
 
-# Nova
+## Nova
+|catégorie  		|fonction							|
+|---				|---								|
+|calcul				|gestion de l'hyperviseur			|
+
+Est le module qui prépare la machine virtuelle et qui gère l'hyperviseur. Au niveau de l'**architecture** Nova communique en REST API pour l'interface utilisateur (cli, horizon, ...) ce qui utilise la base de donné partagée avec les autres modules, mais pour les communications internes Nova utilise les appels [RPC](https://docs.openstack.org/nova/latest/reference/rpc.html). Nova possède la fonctionnalité du déploiement horizontal, nommé [Cells](https://docs.openstack.org/nova/latest/user/cells.html).
+
+|[hyperviseur compatible avec nova](https://docs.openstack.org/nova/train/admin/configuration/hypervisors.html)	|
+|			:---:					|
+|**type natif** 					|
+|[KVM](https://docs.openstack.org/nova/train/admin/configuration/hypervisor-kvm.html)							|
+|[Xen (libvirt)](https://docs.openstack.org/nova/train/admin/configuration/hypervisor-xen-libvirt.html)			|
+|[LXC (libvirt) (déprécié en prod)](https://docs.openstack.org/nova/train/admin/configuration/hypervisor-lxc.html)							|
+|HyperV								|
+|zVM								|
+|**type hosted**					|
+|[QEMU](https://docs.openstack.org/nova/train/admin/configuration/hypervisor-qemu.html)							|
+|**bare-metal**	(execution sur machine physique)|
+|Ironic (module d'OpenStack)		|
+
+**À propos de LXC**. LXC embarque libvirt depuis peu, mais il n'est pas sécurisé pour la multi-collocation.  
+**À propos de libvirt**. Il est important de vérifier les failles de sécurité de libvirt, si utilisé, car il peut fortement impacté la conteneurisation. *Voir [CVE-2019-5736](https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html) : s'echaper du conteneur via les PID.*
+
+## Neutron
+
+|catégorie  		|fonction							|
+|---				|---								|
+|réseaux			|software-defined networking (SDN)	|
+
+[//]: <> (src image : https://fr.wikipedia.org/wiki/Software-defined_networking#/media/Fichier:Software_Defined_Networking_System_Overview.fr.svg)
+![title](../../annexe/assets/SDN.png)
 
