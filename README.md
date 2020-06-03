@@ -39,5 +39,5 @@
 Est composé en trois parties :
 - `assets/` : composé de fichiers de ressources présent dans `/doc`
 - `guide_technique/` : tutoriel technique sur OpenStack
-- `sources.md` : référence de toutes les ressources utilisés non répertorier dans `/doc`
+- `sources.md` : référence de toutes les ressources utilisés non répertorié dans `/doc`
 
