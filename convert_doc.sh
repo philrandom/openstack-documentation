@@ -26,7 +26,6 @@ cat << EOF > cover.tex
 \end{document}
 EOF
 texi2pdf cover.tex
-ls | grep cover | sed 's/cover.pdf//'
 
 #	0_Intro
 ###################
@@ -44,5 +43,5 @@ cd ../..
 
 #	unification
 ####################
-pdfunite cover.pdf doc/0_Intro/0_Intro.pdf doc/1_OpenStack/1_OpenStack.pdf  final.pdf
-rm cover.pdf doc/0_Intro/0_Intro.pdf doc/1_OpenStack/1_OpenStack.pdf
+pdfunite cover.pdf doc/0_Intro/0_Intro.pdf doc/1_OpenStack/1_OpenStack.pdf  OpenStack-prospection.pdf
+rm cover.* doc/0_Intro/0_Intro.pdf doc/1_OpenStack/1_OpenStack.pdf
