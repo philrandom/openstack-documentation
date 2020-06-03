@@ -27,6 +27,11 @@ cat << EOF > cover.tex
 EOF
 texi2pdf cover.tex
 
+# README
+#################
+pandoc README.md -o README.pdf --pdf-engine=xelatex
+
+
 #	0_Intro
 ###################
 cd doc/0_Intro
@@ -43,5 +48,5 @@ cd ../..
 
 #	unification
 ####################
-pdfunite cover.pdf doc/0_Intro/0_Intro.pdf doc/1_OpenStack/1_OpenStack.pdf  OpenStack-prospection.pdf
-rm cover.* doc/0_Intro/0_Intro.pdf doc/1_OpenStack/1_OpenStack.pdf
+pdfunite cover.pdf README.pdf doc/0_Intro/0_Intro.pdf doc/1_OpenStack/1_OpenStack.pdf  OpenStack-prospection.pdf
+rm cover.* README.pdf doc/0_Intro/0_Intro.pdf doc/1_OpenStack/1_OpenStack.pdf

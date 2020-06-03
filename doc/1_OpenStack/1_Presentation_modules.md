@@ -107,5 +107,36 @@ Ce module à pour principal objectif de charger une image base sur une VM. Glanc
 |---				|---								|
 |réseaux			|software-defined networking (SDN)	|
 
+Neutron est responsable de la définition du réseaux pour les VM. Il leur assigne une IP. Mais également il peut gérer les connexion entres les VM. Neutron est aussi spécialisé dans le VPNaaS, FWaaS (FireWall-as-a-Service), et le LBaaS (LoadBalancing-as-a-Service). Il supporte plusieurs plugins et protocoles réseaux.
+
+Il embarque avec lui des methode de segmentations comme :
+- VLAN
+- VXLAN
+- GRE
+- Network Namespaces
+- OpenFlow Rules
+
+
 [//]: <> (src image : https://fr.wikipedia.org/wiki/Software-defined_networking#/media/Fichier:Software_Defined_Networking_System_Overview.fr.svg)
-![title](../../annexe/assets/SDN.png)
+[//]: <> (../../annexe/assets/SDN.png)
+
+### Exemple simple
+Neutron permet de créer des `Network` et des `Sub-Network` pour ainsi les liée à un `Router`. 
+
+```
+
+____________________
+| NET1				|
+| SUBNET1   		|
+|-------------------|
+ |		|		|
+ |		|		|
+ BLUE1	BLUE2	DHCP
+
+
+
+```
+
+
+
+
