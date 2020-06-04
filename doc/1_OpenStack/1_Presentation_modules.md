@@ -107,8 +107,10 @@ Ce module à pour principal objectif de charger une image base sur une VM. Glanc
 |---				|---								|
 |réseaux			|software-defined networking (SDN)	|
 
-Neutron est responsable de la définition du réseaux pour les VM. Il leur assigne une IP. Mais également il peut gérer les connexion entres les VM. Neutron est aussi spécialisé dans le VPNaaS, FWaaS (FireWall-as-a-Service), et le LBaaS (LoadBalancing-as-a-Service). Il supporte plusieurs plugins et protocoles réseaux.
-
+Neutron est responsable de la définition du réseaux pour les VM. Il leur assigne une IP. Mais également il peut gérer les connexion entres les VM. Neutron est aussi spécialisé dans le VPNaaS, FWaaS (FireWall-as-a-Service), et le LBaaS (LoadBalancing-as-a-Service). Il fonctionne sur du SDN (software-defined networking), utilisé en milieu de cloud-computing, il tend à séparer le traffic réseaux en trois couche :
+- management plane : interface utilisateur pour la gestion
+- controle plane : protocole de routage et décision du traitement
+- data plane : traitement des paquets
 
 [//]: <> (src image : https://fr.wikipedia.org/wiki/Software-defined_networking#/media/Fichier:Software_Defined_Networking_System_Overview.fr.svg)
 [//]: <> (../../annexe/assets/SDN.png)
@@ -122,5 +124,11 @@ La séparation des NETWORKS est appelé **méthode de segmentation**. OpenStack 
 - Network Namespaces
 - OpenFlow Rules
 
+Lorsqu'un NETWORK est crée alors un **SUBNET** lui est automatiquement associé. Le SUBNET est une couche qui definit les addressages des VM présent sur le NETWORK. Par défaut un server DHCP est lancé, mangé par l'agent dhcp de Neutron.
+Une fois le NETWORK spécifié des VM peuvent être créer par le module Nova.  
 
+Les **Ports** au seins du réseaux différent des ports classiques. En effet il se presente sous cette forme : 
 
+|  			|Name 		| ID 		| Network ID 	| project ID 	| MAC address 	| Status 	|
+|---		|---		|---		|---			|---			|---			|---		|
+|**format**	|alphanum	|hash		|hash			|hash			|format mac adress| Active/Inactive|
