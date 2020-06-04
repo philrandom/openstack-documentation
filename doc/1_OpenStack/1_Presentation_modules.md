@@ -109,34 +109,18 @@ Ce module à pour principal objectif de charger une image base sur une VM. Glanc
 
 Neutron est responsable de la définition du réseaux pour les VM. Il leur assigne une IP. Mais également il peut gérer les connexion entres les VM. Neutron est aussi spécialisé dans le VPNaaS, FWaaS (FireWall-as-a-Service), et le LBaaS (LoadBalancing-as-a-Service). Il supporte plusieurs plugins et protocoles réseaux.
 
-Il embarque avec lui des methode de segmentations comme :
-- VLAN
-- VXLAN
-- GRE
-- Network Namespaces
-- OpenFlow Rules
-
 
 [//]: <> (src image : https://fr.wikipedia.org/wiki/Software-defined_networking#/media/Fichier:Software_Defined_Networking_System_Overview.fr.svg)
 [//]: <> (../../annexe/assets/SDN.png)
 
-### Exemple simple
-Neutron permet de créer des `Network` et des `Sub-Network` pour ainsi les liée à un `Router`. 
-
-```
-
-____________________
-| NET1				|
-| SUBNET1   		|
-|-------------------|
- |		|		|
- |		|		|
- BLUE1	BLUE2	DHCP
-
-
-
-```
-
+## architecture
+**NETWORK** est comparable à un réseaux VLAN dans les réseaux classiques mais avec plus de flexibilité. Le VLAN est une logique de découpage qui permet notamment de séparer deux différent VLAN se trouvant sur le même réseaux. Chaque réseaux VLAN à son domaine de broadcast d'associé. De manière similaire les NETWORK sous OpenStack associé un broadcast à chaque réseaux.  
+La séparation des NETWORKS est appelé **méthode de segmentation**. OpenStack embarque avec lui plusieurs méthode comme :
+- VLAN
+- [VXLAN](https://tools.ietf.org/html/rfc7348) même principe que VLAN; avec 16 millions d'adresse possible
+- GRE
+- Network Namespaces
+- OpenFlow Rules
 
 
 
