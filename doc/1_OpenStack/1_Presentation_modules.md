@@ -172,3 +172,10 @@ Ce qui permet une réponse bidirectionnel car pour la réponse le ROUTER pourra 
 EXT-----(src:200.0.0.1;dest:80.0.0.2)--->ROUTER---(src:192.168.1.1;dest:192.168.0.2)--->VM-A
 ```
 
+
+### Sécurité
+
+#### Security Group
+
+Les **Security Group** sont des lois de sécurité et de contrôle appliqué aux niveaux des ports. On peut ainsi filtré les connections entrantes dit `ingress` et les connections externes dit `egress` en fonction des protocoles comme TCP,UDP, ICMP etc.  
+Les lois peuvent autorisé certains trafics en fonction de leurs sources. Les sources peuvent être **Classless Inter-Domain Routing (CIDR)** ou 
