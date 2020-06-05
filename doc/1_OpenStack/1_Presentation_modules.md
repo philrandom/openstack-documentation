@@ -107,7 +107,7 @@ Ce module à pour principal objectif de charger une image base sur une VM. Glanc
 |---				|---								|
 |réseaux			|software-defined networking (SDN)	|
 
-Neutron est responsable de la définition du réseaux pour les VM. Il leur assigne une IP. Mais également il peut gérer les connexion entres les VM. Neutron est aussi spécialisé dans le VPNaaS, FWaaS (FireWall-as-a-Service), et le LBaaS (LoadBalancing-as-a-Service). Il fonctionne sur du SDN (software-defined networking), utilisé en milieu de cloud-computing, il tend à séparer le traffic réseaux en trois couche :
+Neutron est responsable de la définition du réseaux pour les VM. Il leur assigne une IP. Mais également il peut gérer les connexion entres les VM. Neutron est aussi spécialisé dans le VPNaaS, FWaaS (FireWall-as-a-Service), et le LBaaS (LoadBalancing-as-a-Service). Il fonctionne sur du SDN (software-defined networking), utilisé en milieu de cloud-computing, il tend à séparer le trafic réseaux en trois couche :
 - management plane : interface utilisateur pour la gestion
 - controle plane : protocole de routage et décision du traitement
 - data plane : traitement des paquets
@@ -115,7 +115,7 @@ Neutron est responsable de la définition du réseaux pour les VM. Il leur assig
 [//]: <> (src image : https://fr.wikipedia.org/wiki/Software-defined_networking#/media/Fichier:Software_Defined_Networking_System_Overview.fr.svg)
 [//]: <> (../../annexe/assets/SDN.png)
 
-## architecture
+### Architecture
 **NETWORK** est comparable à un réseaux VLAN dans les réseaux classiques mais avec plus de flexibilité. Le VLAN est une logique de découpage qui permet notamment de séparer deux différent VLAN se trouvant sur le même réseaux. Chaque réseaux VLAN à son domaine de broadcast d'associé. De manière similaire les NETWORK sous OpenStack associé un broadcast à chaque réseaux.  
 La séparation des NETWORKS est appelé **méthode de segmentation**. OpenStack embarque avec lui plusieurs méthode comme :
 - VLAN
@@ -124,11 +124,51 @@ La séparation des NETWORKS est appelé **méthode de segmentation**. OpenStack 
 - Network Namespaces
 - OpenFlow Rules
 
-Lorsqu'un NETWORK est crée alors un **SUBNET** lui est automatiquement associé. Le SUBNET est une couche qui definit les addressages des VM présent sur le NETWORK. Par défaut un server DHCP est lancé, mangé par l'agent dhcp de Neutron.
+Lorsqu'un NETWORK est crée alors un **SUBNET** lui est automatiquement associé. Le SUBNET est une couche qui definit les adressages des VM présent sur le NETWORK. Par défaut un server DHCP est lancé, mangé par l'agent dhcp de Neutron.
 Une fois le NETWORK spécifié des VM peuvent être créer par le module Nova.  
 
-Les **Ports** au seins du réseaux différent des ports classiques. En effet il se presente sous cette forme : 
+Les **Ports** au seins du réseaux différent des ports classiques. Ici un Port est associé à un service du serveur. En effet il se presente sous cette forme : 
 
-|  			|Name 		| ID 		| Network ID 	| project ID 	| MAC address 	| Status 	|
-|---		|---		|---		|---			|---			|---			|---		|
-|**format**	|alphanum	|hash		|hash			|hash			|format mac adress| Active/Inactive|
+|  			|Name 		| Fixed IP	|Attached Device	 		| Status 	|
+|---		|---		|---		|---						|---		|
+|**format**	|hash		|IPv4		|ex: network:dhcp 			| Active/Inactive|
+
+
+Pour connecter deux NETWORK entre eux il faut liée via un **ROUTER** virtuelle au seins d'OpenStack. Tout comme les VM le ROUTER est connecté à un port du NETWORK. Son `attached device` est `network:router_interface_distributed`. Le ROUTER permet la connexion avec l'extérieur en spécifiant le gateway.  
+
+Jusqu'à présent les paquets peuvent sortir du réseaux via le ROUTER et atteindre l'extérieur mais la connexion est unidirectionnel. Le **FLOATING IP** permet des connexion bidirectionnel.
+
+```
+		--------------------------
+		|  ARCHITECTURE SIMPLIFIÉ|
+		--------------------------
+
+VM-A:192.168.0.2 -------------/--> ROUTER: lan 192.168.1.1; wan 80.0.0.1------------> EXT : 200.0.0.1
+VM-B:192.168.0.3 ------------/
+
+```
+#### Cas unidirectionnel 
+```
+VM-A ---------(src:192.168.0.2;dest:192.168.1.1)-------> ROUTER ----(src:80.0.0.1;dest:200.0.0.1)----> EXT
+```
+Dans le cas unidirectionnel où une VM-A souhaite atteindre 200.0.0.1 à l'exterieur. La VM-A envoie un paquet au ROUTER, dont l'en-tête est `src 192.168.0.2 ; dest 192.168.1.1`. Le ROUTER renvoie le paquet vers l'extérieure, avec l'en-tête `src 80.0.0.1 ; dest 200.0.0.1`. Lorsque une réponse revient le cheminement est le suivant : 
+
+
+```
+EXT-----(src:200.0.0.1;dest:80.0.0.1)--->ROUTER---(src:192.168.1.1;dest:?????)--->VM-?
+```
+Une fois le paquet arrivé au ROUTER, ce dernier ne sait pas à qui l'envoyer.
+
+#### Cas bidirectionnel via FLOATING IP
+
+Pour obtenir un cas bidirectionnel, on associe une IP public à chaque VM, ici VM-A 80.0.0.2 et VM-B 80.0.0.3, au lieu d'une seule pour le groupe.
+
+```
+VM-A -----(src:192.168.0.2;dest:192.168.1.1)----> ROUTER ---(src:80.0.0.2;dest:200.0.0.1)--->EXT
+```
+Ce qui permet une réponse bidirectionnel car pour la réponse le ROUTER pourra précisement envoyé le paquet à une seule ip local, ici la VM-A.
+
+```
+EXT-----(src:200.0.0.1;dest:80.0.0.2)--->ROUTER---(src:192.168.1.1;dest:192.168.0.2)--->VM-A
+```
+
