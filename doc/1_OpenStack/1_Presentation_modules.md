@@ -187,16 +187,6 @@ Les Security Groups sont similaires à `iptables`.
 **Prérequis** il faut pour faire un FWaaS avec neutron certaines fonctionnalités, ici Open vSwitch (implementation de distrubution virtuel multilayer switch) et activer ML2 (autorise Neutron à utiliser la couche 2 du modèle OSIS). Le paramétrage se fait via au fichiers de configurations.  
 Contrairement au Security Group qui s'applique aux niveaux des Ports, le FW lui assure la sécurité au niveau du ROUTER. La FW policy fonctionne comme iptables avec un nom de référence. **Attention l'ordre des régles est importantes.**
 
-## Swift
-|catégorie  		|fonction							|
-|---				|---								|
-|stockage			|type objet, permettant d'enregistrer des configuration de VM |
-
-À la différence de Cinder utilisant le stockage de block (comme un filesystem), Swift utilise le stockage d'objet. Le stockage d'objet permet de sérialisé des structures avec des pointages de donnés vers des fichiers.  
-
-Un cas concret peut être l'utilisation au seins d'un drive où un objet représente un utilisateur pour y stocké toutes les versions de chaque fichiers. Via des intégrations en PHP (`php-opencloud`), ruby (`ruby-openstack library`), Java (`jclouds library`) et Pyhton (`python-swiftclient`)  on peut ainsi utiliser OpenStack comme un drive.  
-Au seins d'OpenStack les objets peuvent aussi stocké tout un projet avec sa topologie d'un réseaux, ses adresses, ses VM ... Pour déployé une backup à partir d'une snapshot de tout le projet. [Voir doc : Back up and restore volumes and snapshots](https://docs.openstack.org/cinder/latest/admin/blockstorage-volume-backups.html) Pour le bon fonctionnement d'une restauration Swift travail avec Cinder.
-
 
 ## [Cinder](https://docs.openstack.org/cinder/latest/)
 
@@ -206,3 +196,13 @@ Cinder est un Block Storage similaire à un filesystem classique, principalement
 - Recoverable : prévient et maintient facilement les failles dû aux disques
 
 > Par conséquent les donnés ne sont pas consistante.
+
+## Swift
+|catégorie  		|fonction							|
+|---				|---								|
+|stockage			|type objet, permettant d'enregistrer des configuration de VM |
+
+À la différence de Cinder utilisant le stockage de block (comme un filesystem), Swift utilise le stockage d'objet. Le stockage d'objet permet de sérialisé des structures avec des pointages de donnés vers des fichiers.  
+
+Un cas concret peut être l'utilisation au seins d'un drive où un objet représente un utilisateur pour y stocké toutes les versions de chaque fichiers. Via des intégrations en PHP (`php-opencloud`), ruby (`ruby-openstack library`), Java (`jclouds library`) et Pyhton (`python-swiftclient`)  on peut ainsi utiliser OpenStack comme un drive.  
+Au seins d'OpenStack les objets peuvent aussi stocké tout un projet avec sa topologie d'un réseaux, ses adresses, ses VM ... Pour déployé une backup à partir d'une snapshot de tout le projet. [Voir doc : Back up and restore volumes and snapshots](https://docs.openstack.org/cinder/latest/admin/blockstorage-volume-backups.html) Pour le bon fonctionnement d'une restauration Swift travail avec Cinder.
