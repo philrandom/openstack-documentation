@@ -181,3 +181,8 @@ Les **Security Group** sont des lois de sécurité et de contrôle appliqué aux
 Les notations autorisés sont **Classless Inter-Domain Routing (CIDR)** (ex:192.168.1.0/24) où 0.0.0.0/0 pour toutes les IP.
 
 Les Security Groups sont similaires à `iptables`.
+
+#### Neutron FWaaS
+
+**Prérequis** il faut pour faire un FWaaS avec neutron certaines fonctionnalités, ici Open vSwitch (implementation de distrubution virtuel multilayer switch) et activer ML2 (autorise Neutron à utiliser la couche 2 du modèle OSIS). Le paramétrage se fait via au fichiers de configurations.  
+Contrairement au Security Group qui s'applique aux niveaux des Ports, le FW lui assure la sécurité au niveau du ROUTER. La FW policy fonctionne comme iptables avec un nom de référence. **Attention l'ordre des régles est importantes.**
