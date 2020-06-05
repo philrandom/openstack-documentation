@@ -17,7 +17,7 @@ Ici seront présenté les modules dans l'ordre d'apparition selon une architectu
     |       |         |         |       |         |
     |       |         |         |       |         |
     |       |         |         |       |         |
-  Keystone─────────────────────────────────────────
+  Keystone─────────────────────────────────────────────────Ceilometer
 ```
 
 ## [Keystone](https://docs.openstack.org/keystone/latest/getting-started/architecture.html)
