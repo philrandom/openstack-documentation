@@ -177,5 +177,7 @@ EXT-----(src:200.0.0.1;dest:80.0.0.2)--->ROUTER---(src:192.168.1.1;dest:192.168.
 
 #### Security Group
 
-Les **Security Group** sont des lois de sécurité et de contrôle appliqué aux niveaux des ports. On peut ainsi filtré les connections entrantes dit `ingress` et les connections externes dit `egress` en fonction des protocoles comme TCP,UDP, ICMP etc.  
-Les lois peuvent autorisé certains trafics en fonction de leurs sources. Les sources peuvent être **Classless Inter-Domain Routing (CIDR)** ou 
+Les **Security Group** sont des lois de sécurité et de contrôle appliqué aux niveaux des ports référencé par un nom. On peut ainsi filtré les connections entrantes dit `ingress` et les connections externes dit `egress` en fonction des protocoles comme TCP,UDP, ICMP etc.  
+Les notations autorisés sont **Classless Inter-Domain Routing (CIDR)** (ex:192.168.1.0/24) où 0.0.0.0/0 pour toutes les IP.
+
+Les Security Groups sont similaires à `iptables`.
