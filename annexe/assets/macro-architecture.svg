@@ -11,19 +11,23 @@
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg910"
    version="1.1"
-   viewBox="0 0 210 297"
-   height="297mm"
-   width="210mm">
+   viewBox="0 0 267.80139 197.33018"
+   height="197.33018mm"
+   width="267.80139mm">
   <defs
      id="defs904">
     <rect
        id="rect1757"
        height="29.360542"
-       width="62.701457"
-       y="56.163814"
-       x="246.0308" />
+       width="62.701458"
+       y="56.163815"
+       x="246.03081" />
   </defs>
   <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
      showborder="false"
      inkscape:pagecheckerboard="false"
      inkscape:window-maximized="1"
@@ -36,11 +40,11 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="568.58229"
-     inkscape:cx="444.35043"
+     inkscape:cy="411.17266"
+     inkscape:cx="458.42257"
      inkscape:zoom="0.98994949"
      inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="1"
      borderopacity="1.0"
      bordercolor="#666666"
      pagecolor="#ffffff"
@@ -58,6 +62,7 @@
     </rdf:RDF>
   </metadata>
   <g
+     transform="translate(3.723256,-41.647965)"
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
@@ -150,7 +155,7 @@
        height="13.215813"
        width="13.215813"
        id="rect1540"
-       style="fill:#008080;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1" />
+       style="fill:#008080;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round" />
     <text
        id="text1544"
        y="200.66843"
@@ -428,7 +433,7 @@
        d="m 165.08834,68.724951 h 78.74303"
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <text
-       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10.58333333px;line-height:1.25;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1757);"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1757);fill:#000000;fill-opacity:1;stroke:none;"
        id="text1755"
        xml:space="preserve" />
     <text
