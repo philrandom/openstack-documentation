@@ -43,7 +43,7 @@ Premièrement il respecte les objectifs fixés.
 ### Inconvénients
 
 Majeur :
-- High Availability : au niveau NORD-SUD les connexions seront ralentis car tout les flux des VM passeront par un seul routeur ici PR. Dans l'énoncé posé, ceci n'est un problème que lorsque les VM font des mise à jour collectivement et souvent sur le même repository, on peut contrer ce problème en installant un proxy cache (mise en cache de data temporairement pour augmenter la rapidité de l'accessibilité) au seins d'OpenStack.  
+- High Availability : au niveau NORD-SUD les connexions seront ralentis car tout les flux des VM passeront par un seul routeur ici PR. Dans l'énoncé posé, ceci est un problème car les clients feront par exemple du bureau à distance, ou travaille de fichier (donc lourde charge). C'est un noeud d'étranglement.  
 
 Mineur :
 - Fault Tolerence : si Ground Control tombe en panne toute l'infrastructure tombe aussi car Keystone sera absent. Mais les connexions EST-OUEST fonctionneraient encore. Il suffirait de redéployer Ground Control à partir d'une snapshot fonctionnelle.
