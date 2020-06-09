@@ -7,48 +7,48 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="267.80139mm"
-   height="197.33018mm"
-   viewBox="0 0 267.80139 197.33018"
-   version="1.1"
-   id="svg910"
+   sodipodi:docname="macro-architecture_alt.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="macro-architecture_alt.svg">
+   id="svg910"
+   version="1.1"
+   viewBox="0 0 410.26788 215.52781"
+   height="215.52782mm"
+   width="410.26788mm">
   <defs
      id="defs904">
     <rect
-       x="246.03081"
-       y="56.163815"
-       width="62.701458"
+       id="rect1757"
        height="29.360542"
-       id="rect1757" />
+       width="62.701458"
+       y="56.163815"
+       x="246.03081" />
   </defs>
   <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="1"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="255.66436"
-     inkscape:cy="479.99579"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
-     inkscape:snap-text-baseline="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1061"
-     inkscape:window-x="0"
-     inkscape:window-y="19"
-     inkscape:window-maximized="1"
-     inkscape:pagecheckerboard="false"
-     showborder="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
+     fit-margin-bottom="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showborder="false"
+     inkscape:pagecheckerboard="false"
+     inkscape:window-maximized="1"
+     inkscape:window-y="19"
+     inkscape:window-x="0"
+     inkscape:window-height="1061"
+     inkscape:window-width="1920"
+     inkscape:snap-text-baseline="false"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="516.93152"
+     inkscape:cx="866.89064"
+     inkscape:zoom="0.45254834"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="1"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
   <metadata
      id="metadata907">
     <rdf:RDF>
@@ -57,499 +57,506 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
+     transform="translate(147.59131,-81.420735)"
      id="layer1"
-     transform="translate(3.723256,-41.647965)">
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round"
-       id="rect1487"
-       width="108.89597"
+       ry="0"
+       y="184.10846"
+       x="-147.45876"
        height="59.737644"
-       x="-129.42722"
-       y="-11.326691"
-       ry="0" />
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round"
-       id="path1489"
-       cx="-45.943451"
-       cy="32.220036"
-       r="12.897875" />
+       width="108.89597"
+       id="rect1487"
+       style="fill:none;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round" />
     <text
-       xml:space="preserve"
+       id="text1519"
+       y="193.29384"
+       x="-132.48148"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="-53.395416"
-       y="34.215321"
-       id="text1493"><tspan
-         sodipodi:role="line"
-         id="tspan1491"
-         x="-53.395416"
-         y="34.215321"
-         style="stroke-width:0.264583">RP</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.40106px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.200088"
-       x="-55.565292"
-       y="37.767879"
-       id="text1497"><tspan
-         sodipodi:role="line"
-         id="tspan1495"
-         x="-55.565292"
-         y="37.767879"
-         style="font-size:2.40106px;stroke-width:0.200088">Routeur Principal</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="-114.44993"
-       y="-2.1413193"
-       id="text1519"><tspan
-         sodipodi:role="line"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="193.29384"
+         x="-132.48148"
          id="tspan1517"
-         x="-114.44993"
-         y="-2.1413193"
-         style="stroke-width:0.264583">Ground Control</tspan></text>
+         sodipodi:role="line">Ground Control</tspan></text>
+    <rect
+       ry="0"
+       y="234.50481"
+       x="3.9999881"
+       height="62.311188"
+       width="51.490128"
+       id="rect1530"
+       style="fill:none;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round" />
+    <text
+       id="text1534"
+       y="243.56215"
+       x="9.7048826"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         id="tspan1536"
+         style="stroke-width:0.264583"
+         y="243.56215"
+         x="9.7048826"
+         sodipodi:role="line">COMP-1</tspan></text>
+    <rect
+       ry="2.4449437"
+       y="249.83014"
+       x="7.6510701"
+       height="13.215813"
+       width="13.215813"
+       id="rect1540"
+       style="fill:#008080;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round" />
+    <text
+       id="text1544"
+       y="258.63882"
+       x="9.3353319"
+       style="font-style:normal;font-weight:normal;font-size:6.91333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.172834"
+         y="258.63882"
+         x="9.3353319"
+         id="tspan1542"
+         sodipodi:role="line">VM</tspan></text>
+    <rect
+       style="fill:#ffd42a;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round"
+       id="rect1540-2"
+       width="13.215813"
+       height="13.215813"
+       x="7.9180341"
+       y="266.32874"
+       ry="2.4449437" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.91332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
+       x="9.6022959"
+       y="275.13742"
+       id="text1544-9"><tspan
+         sodipodi:role="line"
+         id="tspan1542-1"
+         x="9.6022959"
+         y="275.13742"
+         style="stroke-width:0.172834">VM</tspan></text>
     <rect
        style="fill:none;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round"
-       id="rect1530"
+       id="rect1530-7"
        width="51.490128"
        height="62.311188"
-       x="3.9999881"
-       y="234.50481"
+       x="93.170303"
+       y="234.31917"
        ry="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="9.7048826"
-       y="243.56215"
-       id="text1534"><tspan
+       x="98.875198"
+       y="243.37651"
+       id="text1534-0"><tspan
          sodipodi:role="line"
-         x="9.7048826"
-         y="243.56215"
+         x="98.875198"
+         y="243.37651"
          style="stroke-width:0.264583"
-         id="tspan1536">COMP-1</tspan></text>
+         id="tspan1536-9">COMP-2</tspan></text>
     <rect
        style="fill:#008080;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round"
-       id="rect1540"
+       id="rect1540-3"
        width="13.215813"
        height="13.215813"
-       x="7.6510701"
-       y="249.83014"
+       x="96.821381"
+       y="249.6445"
        ry="2.4449437" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:6.91333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
-       x="9.3353319"
-       y="258.63882"
-       id="text1544"><tspan
+       style="font-style:normal;font-weight:normal;font-size:6.91332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
+       x="98.505646"
+       y="258.45319"
+       id="text1544-6"><tspan
          sodipodi:role="line"
-         id="tspan1542"
-         x="9.3353319"
-         y="258.63882"
+         id="tspan1542-0"
+         x="98.505646"
+         y="258.45319"
          style="stroke-width:0.172834">VM</tspan></text>
     <rect
        ry="2.4449437"
-       y="266.32874"
-       x="7.9180341"
+       y="266.1431"
+       x="97.088348"
        height="13.215813"
        width="13.215813"
-       id="rect1540-2"
+       id="rect1540-2-6"
        style="fill:#ffd42a;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round" />
     <text
-       id="text1544-9"
-       y="275.13742"
-       x="9.6022959"
-       style="font-style:normal;font-weight:normal;font-size:6.91332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
-       xml:space="preserve"><tspan
-         style="stroke-width:0.172834"
-         y="275.13742"
-         x="9.6022959"
-         id="tspan1542-1"
-         sodipodi:role="line">VM</tspan></text>
-    <rect
-       ry="0"
-       y="234.31917"
-       x="93.170303"
-       height="62.311188"
-       width="51.490128"
-       id="rect1530-7"
-       style="fill:none;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round" />
-    <text
-       id="text1534-0"
-       y="243.37651"
-       x="98.875198"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       xml:space="preserve"><tspan
-         id="tspan1536-9"
-         style="stroke-width:0.264583"
-         y="243.37651"
-         x="98.875198"
-         sodipodi:role="line">COMP-2</tspan></text>
-    <rect
-       ry="2.4449437"
-       y="249.6445"
-       x="96.821381"
-       height="13.215813"
-       width="13.215813"
-       id="rect1540-3"
-       style="fill:#008080;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round" />
-    <text
-       id="text1544-6"
-       y="258.45319"
-       x="98.505646"
-       style="font-style:normal;font-weight:normal;font-size:6.91332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
-       xml:space="preserve"><tspan
-         style="stroke-width:0.172834"
-         y="258.45319"
-         x="98.505646"
-         id="tspan1542-0"
-         sodipodi:role="line">VM</tspan></text>
-    <rect
-       style="fill:#ffd42a;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round"
-       id="rect1540-2-6"
-       width="13.215813"
-       height="13.215813"
-       x="97.088348"
-       y="266.1431"
-       ry="2.4449437" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:6.91332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
-       x="98.772606"
+       id="text1544-9-2"
        y="274.95178"
-       id="text1544-9-2"><tspan
-         sodipodi:role="line"
-         id="tspan1542-1-6"
-         x="98.772606"
-         y="274.95178"
-         style="stroke-width:0.172834">VM</tspan></text>
-    <rect
-       ry="0"
-       y="234.43575"
-       x="197.6664"
-       height="62.311188"
-       width="51.490128"
-       id="rect1530-8"
-       style="fill:none;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round" />
-    <text
-       id="text1534-9"
-       y="243.49309"
-       x="203.37129"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       xml:space="preserve"><tspan
-         id="tspan1536-7"
-         style="stroke-width:0.264583"
-         y="243.49309"
-         x="203.37129"
-         sodipodi:role="line">COMP-N</tspan></text>
-    <rect
-       ry="2.4449437"
-       y="249.76108"
-       x="201.31749"
-       height="13.215813"
-       width="13.215813"
-       id="rect1540-36"
-       style="fill:#008080;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round" />
-    <text
-       id="text1544-1"
-       y="258.56976"
-       x="203.00174"
+       x="98.772606"
        style="font-style:normal;font-weight:normal;font-size:6.91332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
        xml:space="preserve"><tspan
          style="stroke-width:0.172834"
-         y="258.56976"
-         x="203.00174"
-         id="tspan1542-2"
+         y="274.95178"
+         x="98.772606"
+         id="tspan1542-1-6"
          sodipodi:role="line">VM</tspan></text>
     <rect
-       style="fill:#ffd42a;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round"
-       id="rect1540-2-9"
+       style="fill:none;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round"
+       id="rect1530-8"
+       width="51.490128"
+       height="62.311188"
+       x="197.6664"
+       y="234.43575"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="203.37129"
+       y="243.49309"
+       id="text1534-9"><tspan
+         sodipodi:role="line"
+         x="203.37129"
+         y="243.49309"
+         style="stroke-width:0.264583"
+         id="tspan1536-7">COMP-N</tspan></text>
+    <rect
+       style="fill:#008080;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round"
+       id="rect1540-36"
        width="13.215813"
        height="13.215813"
-       x="201.58444"
-       y="266.25967"
+       x="201.31749"
+       y="249.76108"
        ry="2.4449437" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:6.91332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
-       x="203.26871"
-       y="275.06836"
-       id="text1544-9-3"><tspan
+       x="203.00174"
+       y="258.56976"
+       id="text1544-1"><tspan
          sodipodi:role="line"
-         id="tspan1542-1-1"
-         x="203.26871"
-         y="275.06836"
+         id="tspan1542-2"
+         x="203.00174"
+         y="258.56976"
          style="stroke-width:0.172834">VM</tspan></text>
+    <rect
+       ry="2.4449437"
+       y="266.25967"
+       x="201.58444"
+       height="13.215813"
+       width="13.215813"
+       id="rect1540-2-9"
+       style="fill:#ffd42a;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round" />
+    <text
+       id="text1544-9-3"
+       y="275.06836"
+       x="203.26871"
+       style="font-style:normal;font-weight:normal;font-size:6.91332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.172834"
+         y="275.06836"
+         x="203.26871"
+         id="tspan1542-1-1"
+         sodipodi:role="line">VM</tspan></text>
+    <circle
+       r="8.3719931"
+       cy="284.32193"
+       cx="44.551697"
+       id="path1657"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <text
+       id="text1661"
+       y="285.63342"
+       x="36.94178"
+       style="font-style:normal;font-weight:normal;font-size:7.05308px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176327"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.176327"
+         y="285.63342"
+         x="36.94178"
+         id="tspan1659"
+         sodipodi:role="line">DVR</tspan></text>
+    <text
+       id="text1665"
+       y="287.35608"
+       x="44.69825"
+       style="font-style:normal;font-weight:normal;font-size:2.05163px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.051291"
+       xml:space="preserve"><tspan
+         style="font-size:1.62653px;text-align:center;text-anchor:middle;stroke-width:0.051291"
+         y="287.35608"
+         x="44.69825"
+         id="tspan1663"
+         sodipodi:role="line">Distributed Virtual</tspan><tspan
+         id="tspan1667"
+         style="font-size:1.62653px;text-align:center;text-anchor:middle;stroke-width:0.051291"
+         y="289.92062"
+         x="44.69825"
+         sodipodi:role="line">Routing</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="path1657"
-       cx="44.551697"
+       id="path1657-0"
+       cx="133.36633"
        cy="284.32193"
        r="8.3719931" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:7.05308px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176327"
-       x="36.94178"
+       x="125.75641"
        y="285.63342"
-       id="text1661"><tspan
+       id="text1661-3"><tspan
          sodipodi:role="line"
-         id="tspan1659"
-         x="36.94178"
+         id="tspan1659-6"
+         x="125.75641"
          y="285.63342"
          style="stroke-width:0.176327">DVR</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.05163px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.051291"
-       x="44.69825"
-       y="287.35608"
-       id="text1665"><tspan
-         sodipodi:role="line"
-         id="tspan1663"
-         x="44.69825"
-         y="287.35608"
-         style="font-size:1.62653px;text-align:center;text-anchor:middle;stroke-width:0.051291">Distributed Virtual</tspan><tspan
-         sodipodi:role="line"
-         x="44.69825"
-         y="289.92062"
-         style="font-size:1.62653px;text-align:center;text-anchor:middle;stroke-width:0.051291"
-         id="tspan1667">Routing</tspan></text>
-    <circle
-       r="8.3719931"
-       cy="284.32193"
-       cx="133.36633"
-       id="path1657-0"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
-    <text
-       id="text1661-3"
-       y="285.63342"
-       x="125.75641"
-       style="font-style:normal;font-weight:normal;font-size:7.05308px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176327"
-       xml:space="preserve"><tspan
-         style="stroke-width:0.176327"
-         y="285.63342"
-         x="125.75641"
-         id="tspan1659-6"
-         sodipodi:role="line">DVR</tspan></text>
-    <text
-       id="text1665-1"
-       y="287.35608"
+       style="font-style:normal;font-weight:normal;font-size:2.05163px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0512911"
        x="133.51289"
-       style="font-style:normal;font-weight:normal;font-size:2.05163px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0512911"
-       xml:space="preserve"><tspan
-         style="font-size:1.62653px;text-align:center;text-anchor:middle;stroke-width:0.0512911"
-         y="287.35608"
-         x="133.51289"
+       y="287.35608"
+       id="text1665-1"><tspan
+         sodipodi:role="line"
          id="tspan1663-0"
-         sodipodi:role="line">Distributed Virtual</tspan><tspan
-         id="tspan1667-6"
-         style="font-size:1.62653px;text-align:center;text-anchor:middle;stroke-width:0.0512911"
-         y="289.92062"
          x="133.51289"
-         sodipodi:role="line">Routing</tspan></text>
-    <circle
-       r="8.3719931"
-       cy="284.48132"
-       cx="237.62637"
-       id="path1657-3"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
-    <text
-       id="text1661-2"
-       y="285.79282"
-       x="230.01646"
-       style="font-style:normal;font-weight:normal;font-size:7.05308px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176327"
-       xml:space="preserve"><tspan
-         style="stroke-width:0.176327"
-         y="285.79282"
-         x="230.01646"
-         id="tspan1659-0"
-         sodipodi:role="line">DVR</tspan></text>
-    <text
-       id="text1665-6"
-       y="287.51547"
-       x="237.77293"
-       style="font-style:normal;font-weight:normal;font-size:2.05163px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0512911"
-       xml:space="preserve"><tspan
+         y="287.35608"
+         style="font-size:1.62653px;text-align:center;text-anchor:middle;stroke-width:0.0512911">Distributed Virtual</tspan><tspan
+         sodipodi:role="line"
+         x="133.51289"
+         y="289.92062"
          style="font-size:1.62653px;text-align:center;text-anchor:middle;stroke-width:0.0512911"
-         y="287.51547"
-         x="237.77293"
-         id="tspan1663-1"
-         sodipodi:role="line">Distributed Virtual</tspan><tspan
-         id="tspan1667-5"
-         style="font-size:1.62653px;text-align:center;text-anchor:middle;stroke-width:0.0512911"
-         y="290.08002"
-         x="237.77293"
-         sodipodi:role="line">Routing</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="-121.00119"
-       y="12.804424"
-       id="text1747"><tspan
-         sodipodi:role="line"
-         id="tspan1745"
-         x="-121.00119"
-         y="12.804424"
-         style="font-size:4.93889px;stroke-width:0.264583">·Keystone</tspan><tspan
-         sodipodi:role="line"
-         x="-121.00119"
-         y="18.978039"
-         style="font-size:4.93889px;stroke-width:0.264583"
-         id="tspan1749">·Glance</tspan><tspan
-         sodipodi:role="line"
-         x="-121.00119"
-         y="25.151646"
-         style="font-size:4.93889px;stroke-width:0.264583"
-         id="tspan1751">·Swift</tspan></text>
-    <text
-       xml:space="preserve"
-       id="text1755"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1757);fill:#000000;fill-opacity:1;stroke:none;" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="243.83138"
-       y="68.724953"
-       id="text1763"><tspan
-         sodipodi:role="line"
-         id="tspan1761"
-         x="243.83138"
-         y="68.724953"
-         style="stroke-width:0.264583">EXT</tspan></text>
-    <rect
-       style="fill:#008080;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round"
-       id="rect1540-3-5"
-       width="13.215813"
-       height="13.215813"
-       x="115.69924"
-       y="249.70934"
-       ry="2.4449437" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:6.91332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
-       x="117.3835"
-       y="258.51801"
-       id="text1544-6-4"><tspan
-         sodipodi:role="line"
-         id="tspan1542-0-7"
-         x="117.3835"
-         y="258.51801"
-         style="stroke-width:0.172834">VM</tspan></text>
-    <rect
-       style="fill:#ffd42a;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round"
-       id="rect1540-2-65"
-       width="13.215813"
-       height="13.215813"
-       x="24.360687"
-       y="266.31473"
-       ry="2.4449437" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:6.91332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
-       x="26.044949"
-       y="275.12341"
-       id="text1544-9-6"><tspan
-         sodipodi:role="line"
-         id="tspan1542-1-9"
-         x="26.044949"
-         y="275.12341"
-         style="stroke-width:0.172834">VM</tspan></text>
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.199619;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="rect1883"
-       width="64.917961"
-       height="55.110222"
-       x="-5.8317814"
-       y="131.28011"
-       ry="0" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="-3.216181"
-       y="143.86777"
-       id="text1887"><tspan
-         sodipodi:role="line"
-         x="-3.216181"
-         y="143.86777"
-         style="stroke-width:0.264583"
-         id="tspan1889">Gateway-1</tspan></text>
+         id="tspan1667-6">Routing</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       id="path1893"
-       cx="24.117329"
-       cy="165.66624"
-       r="10.473942" />
+       id="path1657-3"
+       cx="237.62637"
+       cy="284.48132"
+       r="8.3719931" />
     <text
        xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.05308px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176327"
+       x="230.01646"
+       y="285.79282"
+       id="text1661-2"><tspan
+         sodipodi:role="line"
+         id="tspan1659-0"
+         x="230.01646"
+         y="285.79282"
+         style="stroke-width:0.176327">DVR</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.05163px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0512911"
+       x="237.77293"
+       y="287.51547"
+       id="text1665-6"><tspan
+         sodipodi:role="line"
+         id="tspan1663-1"
+         x="237.77293"
+         y="287.51547"
+         style="font-size:1.62653px;text-align:center;text-anchor:middle;stroke-width:0.0512911">Distributed Virtual</tspan><tspan
+         sodipodi:role="line"
+         x="237.77293"
+         y="290.08002"
+         style="font-size:1.62653px;text-align:center;text-anchor:middle;stroke-width:0.0512911"
+         id="tspan1667-5">Routing</tspan></text>
+    <text
+       id="text1747"
+       y="208.23958"
+       x="-139.03273"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-size:4.93889px;stroke-width:0.264583"
+         y="208.23958"
+         x="-139.03273"
+         id="tspan1745"
+         sodipodi:role="line">·Keystone</tspan><tspan
+         id="tspan1749"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         y="214.41319"
+         x="-139.03273"
+         sodipodi:role="line">·Glance</tspan><tspan
+         id="tspan1751"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         y="220.58681"
+         x="-139.03273"
+         sodipodi:role="line">·Swift</tspan></text>
+    <text
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1757);fill:#000000;fill-opacity:1;stroke:none;"
+       id="text1755"
+       xml:space="preserve" />
+    <text
+       id="text1763"
+       y="89.136002"
+       x="217.76503"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="20.279381"
-       y="165.82147"
-       id="text1897"><tspan
-         sodipodi:role="line"
-         id="tspan1895"
-         x="20.279381"
-         y="165.82147"
-         style="stroke-width:0.264583">R</tspan></text>
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="89.136002"
+         x="217.76503"
+         id="tspan1761"
+         sodipodi:role="line">EXT</tspan></text>
+    <rect
+       ry="2.4449437"
+       y="249.70934"
+       x="115.69924"
+       height="13.215813"
+       width="13.215813"
+       id="rect1540-3-5"
+       style="fill:#008080;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round" />
     <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="17.551937"
-       y="172.2805"
-       id="text1901"><tspan
-         sodipodi:role="line"
-         id="tspan1899"
-         x="17.551937"
-         y="172.2805"
-         style="font-size:3.88056px;stroke-width:0.264583">Router</tspan></text>
+       id="text1544-6-4"
+       y="258.51801"
+       x="117.3835"
+       style="font-style:normal;font-weight:normal;font-size:6.91332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.172834"
+         y="258.51801"
+         x="117.3835"
+         id="tspan1542-0-7"
+         sodipodi:role="line">VM</tspan></text>
+    <rect
+       ry="2.4449437"
+       y="266.31473"
+       x="24.360687"
+       height="13.215813"
+       width="13.215813"
+       id="rect1540-2-65"
+       style="fill:#ffd42a;fill-opacity:1;stroke:none;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round" />
+    <text
+       id="text1544-9-6"
+       y="275.12341"
+       x="26.044949"
+       style="font-style:normal;font-weight:normal;font-size:6.91332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.172834"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.172834"
+         y="275.12341"
+         x="26.044949"
+         id="tspan1542-1-9"
+         sodipodi:role="line">VM</tspan></text>
     <rect
        ry="0"
-       y="131.28009"
-       x="165.46056"
+       y="131.28011"
+       x="-5.8317814"
        height="55.110222"
        width="64.917961"
-       id="rect1883-3"
+       id="rect1883"
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.199619;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
     <text
-       id="text1887-6"
-       y="143.86775"
-       x="168.07616"
+       id="text1887"
+       y="143.86777"
+       x="-3.216181"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
-         id="tspan949"
+         id="tspan1889"
          style="stroke-width:0.264583"
-         y="143.86775"
-         x="168.07616"
-         sodipodi:role="line">Gateway-2</tspan></text>
+         y="143.86777"
+         x="-3.216181"
+         sodipodi:role="line">Gateway-1</tspan></text>
     <circle
        r="10.473942"
-       cy="165.66623"
-       cx="195.40967"
-       id="path1893-5"
+       cy="165.66624"
+       cx="24.117329"
+       id="path1893"
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
     <text
-       id="text1897-3"
-       y="165.82146"
-       x="191.57172"
+       id="text1897"
+       y="165.82147"
+       x="20.279381"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="stroke-width:0.264583"
-         y="165.82146"
-         x="191.57172"
-         id="tspan1895-5"
+         y="165.82147"
+         x="20.279381"
+         id="tspan1895"
          sodipodi:role="line">R</tspan></text>
     <text
-       id="text1901-6"
+       id="text1901"
        y="172.2805"
-       x="188.84427"
+       x="17.551937"
        style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="font-size:3.88056px;stroke-width:0.264583"
          y="172.2805"
-         x="188.84427"
-         id="tspan1899-2"
+         x="17.551937"
+         id="tspan1899"
          sodipodi:role="line">Router</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.199619;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="rect1883-3"
+       width="64.917961"
+       height="55.110222"
+       x="197.65881"
+       y="131.28009"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="200.27441"
+       y="143.86775"
+       id="text1887-6"><tspan
+         sodipodi:role="line"
+         x="200.27441"
+         y="143.86775"
+         style="stroke-width:0.264583"
+         id="tspan949">Gateway-2</tspan></text>
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="path1893-5"
+       cx="227.60793"
+       cy="165.66623"
+       r="10.473942" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="223.76997"
+       y="165.82146"
+       id="text1897-3"><tspan
+         sodipodi:role="line"
+         id="tspan1895-5"
+         x="223.76997"
+         y="165.82146"
+         style="stroke-width:0.264583">R</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="221.04253"
+       y="172.2805"
+       id="text1901-6"><tspan
+         sodipodi:role="line"
+         id="tspan1899-2"
+         x="221.04253"
+         y="172.2805"
+         style="font-size:3.88056px;stroke-width:0.264583">Router</tspan></text>
+    <path
+       id="path923"
+       d="m 30.675807,234.47539 v -48.0194 l 83.080263,47.96641"
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path925"
+       d="M 30.675807,186.45599 210.03643,234.51552"
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 38.30093,234.40972 192.07758,-48.0194 -108.78537,47.96641"
+       id="path923-7" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 230.37851,186.39032 -12.87749,48.05953"
+       id="path925-5" />
+    <path
+       id="path951"
+       d="M 24.328202,155.63831 V 91.322641"
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path953"
+       d="M 227.49163,155.03149 V 90.543912"
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="13.332584"
+       y="89.740623"
+       id="text1763-3"><tspan
+         sodipodi:role="line"
+         id="tspan1761-5"
+         x="13.332584"
+         y="89.740623"
+         style="stroke-width:0.264583">EXT</tspan></text>
   </g>
 </svg>
