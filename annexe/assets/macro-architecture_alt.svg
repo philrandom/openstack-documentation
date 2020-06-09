@@ -11,9 +11,9 @@
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg910"
    version="1.1"
-   viewBox="0 0 410.26788 215.52781"
+   viewBox="0 0 445.1495 215.52781"
    height="215.52782mm"
-   width="410.26788mm">
+   width="445.14951mm">
   <defs
      id="defs904">
     <rect
@@ -40,9 +40,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="516.93152"
-     inkscape:cx="866.89064"
-     inkscape:zoom="0.45254834"
+     inkscape:cy="392.13467"
+     inkscape:cx="873.08958"
+     inkscape:zoom="0.64"
      inkscape:pageshadow="2"
      inkscape:pageopacity="1"
      borderopacity="1.0"
@@ -383,12 +383,12 @@
     <text
        id="text1763"
        y="89.136002"
-       x="217.76503"
+       x="256.7225"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="stroke-width:0.264583"
          y="89.136002"
-         x="217.76503"
+         x="256.7225"
          id="tspan1761"
          sodipodi:role="line">EXT</tspan></text>
     <rect
@@ -431,12 +431,12 @@
          sodipodi:role="line">VM</tspan></text>
     <rect
        ry="0"
-       y="131.28011"
-       x="-5.8317814"
-       height="55.110222"
-       width="64.917961"
+       y="131.30556"
+       x="-5.8063245"
+       height="55.059307"
+       width="102.35069"
        id="rect1883"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.199619;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.250533;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
     <text
        id="text1887"
        y="143.86777"
@@ -456,33 +456,33 @@
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
     <text
        id="text1897"
-       y="165.82147"
-       x="20.279381"
+       y="166.48199"
+       x="17.285908"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="stroke-width:0.264583"
-         y="165.82147"
-         x="20.279381"
+         y="166.48199"
+         x="17.285908"
          id="tspan1895"
-         sodipodi:role="line">R</tspan></text>
+         sodipodi:role="line">R1</tspan></text>
     <text
        id="text1901"
        y="172.2805"
-       x="17.551937"
+       x="16.735819"
        style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="font-size:3.88056px;stroke-width:0.264583"
          y="172.2805"
-         x="17.551937"
+         x="16.735819"
          id="tspan1899"
-         sodipodi:role="line">Router</tspan></text>
+         sodipodi:role="line">Router1</tspan></text>
     <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.199619;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.247339;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
        id="rect1883-3"
-       width="64.917961"
-       height="55.110222"
-       x="197.65881"
-       y="131.28009"
+       width="99.751854"
+       height="55.062504"
+       x="197.68268"
+       y="131.30396"
        ry="0" />
     <text
        xml:space="preserve"
@@ -504,25 +504,25 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="223.76997"
-       y="165.82146"
+       x="220.63672"
+       y="166.82109"
        id="text1897-3"><tspan
          sodipodi:role="line"
          id="tspan1895-5"
-         x="223.76997"
-         y="165.82146"
-         style="stroke-width:0.264583">R</tspan></text>
+         x="220.63672"
+         y="166.82109"
+         style="stroke-width:0.264583">R1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="221.04253"
+       x="220.17369"
        y="172.2805"
        id="text1901-6"><tspan
          sodipodi:role="line"
          id="tspan1899-2"
-         x="221.04253"
+         x="220.17369"
          y="172.2805"
-         style="font-size:3.88056px;stroke-width:0.264583">Router</tspan></text>
+         style="font-size:3.88056px;stroke-width:0.264583">Router1</tspan></text>
     <path
        id="path923"
        d="m 30.675807,234.47539 v -48.0194 l 83.080263,47.96641"
@@ -541,11 +541,11 @@
        id="path925-5" />
     <path
        id="path951"
-       d="M 24.328202,155.63831 V 91.322641"
+       d="M 24.328202,155.3469 V 91.031234"
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        id="path953"
-       d="M 227.49163,155.03149 V 90.543912"
+       d="M 266.44908,155.24238 V 90.754802"
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <text
        xml:space="preserve"
@@ -558,5 +558,61 @@
          x="13.332584"
          y="89.740623"
          style="stroke-width:0.264583">EXT</tspan></text>
+    <circle
+       r="10.473942"
+       cy="165.68678"
+       cx="266.26263"
+       id="path1893-5-6"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    <text
+       id="text1897-3-2"
+       y="166.98785"
+       x="259.96484"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.264583"
+         y="166.98785"
+         x="259.96484"
+         id="tspan1895-5-9"
+         sodipodi:role="line">R2</tspan></text>
+    <text
+       id="text1901-6-1"
+       y="172.30107"
+       x="259.13312"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-size:3.88056px;stroke-width:0.264583"
+         y="172.30107"
+         x="259.13312"
+         id="tspan1899-2-2"
+         sodipodi:role="line">Router2</tspan></text>
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.265112;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       id="path1893-5-6-6"
+       cx="65.61795"
+       cy="165.64854"
+       r="10.473942" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="59.32016"
+       y="166.94962"
+       id="text1897-3-2-2"><tspan
+         sodipodi:role="line"
+         id="tspan1895-5-9-6"
+         x="59.32016"
+         y="166.94962"
+         style="stroke-width:0.264583">R2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.88056px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="58.488434"
+       y="172.26283"
+       id="text1901-6-1-1"><tspan
+         sodipodi:role="line"
+         id="tspan1899-2-2-8"
+         x="58.488434"
+         y="172.26283"
+         style="font-size:3.88056px;stroke-width:0.264583">Router2</tspan></text>
   </g>
 </svg>
