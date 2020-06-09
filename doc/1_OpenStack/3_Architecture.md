@@ -20,3 +20,13 @@ L'architecture est composée de :
 
 Cette architecture est scalable, le jour où la puissance de calcul n'est plus suffisante alors il suffira de déployer un nouveau Compute-Node.  
 Chaque Compute-Node posséde un routeur (DVR). Si les DVR étaient absents alors tout les flux qu'ils soient Nord-Sud (VM vers EXT) ou EST-OUEST (inter-NETWORK et intra-NETWORK) passerait à travers le Principal Router (PR) ce qui alourdi la charge réseau. Les DVR (Distributed Virtual Routing) quand à eux sont là pour gérer les connexions EST-OUEST et ainsi le PR ne se concentre que sur les connexions NORD-SUD. Les DVR sont vu par OpenStack comme un seul routeur, ce qui permet que deux VM jaune (connecté aux network jaune) qui ne sont pas sur le même Compute-Node puissent interagir.
+
+### Avantages
+
+Premièrement il respecte les objectifs fixés. 
+- KISS : modularité des noeud de calcul, avec une scalabilité
+- Security Focus : les régles de par-feu sont centralisé une sur le DVR l'autre sur le PR. (avec la possibilité d'ajout des Security Group)
+- High Availability : les connexions EST-OUEST sont allégé par les DVR
+- Fault Tolerence : si un compute node cesse de fonctionné alors il n'impactera pas le reste
+
+### Inconvénients
