@@ -12,6 +12,11 @@ Un exemple typique :
 
 Une des propositions, non détaillé ici, serait d'utiliser seulement un seul et unique nœud OpenStack. Cette architecture serait grandement déprécié car elle n'est pas scalable et non performantes (raison détaillé plus tard).
 
+**vocabulaire :**
+- trafic Nord-Sud (VM vers EXT)
+- trafic EST-OUEST (inter-NETWORK et intra-NETWORK) 
+
+
 ## Solution : architecture DVR OpenvSwitch
 
 ![title](../../annexe/assets/macro-architecture.svg)
@@ -20,6 +25,7 @@ L'architecture est composée de :
 - 1 Controle-Node (ici appelé *Ground Control*) : il gère la majeur partie avec l'authentification, etc...
 - N Compute-Node (ici appelé *COMP-#*) : où les VM seront exécutés.
 
+### Connexion EST-OUEST
 Cette architecture est scalable, le jour où la puissance de calcul n'est plus suffisante alors il suffira de déployer un nouveau Compute-Node.  
 Chaque Compute-Node posséde un routeur (DVR). Si les DVR étaient absents alors tout les flux qu'ils soient Nord-Sud (VM vers EXT) ou EST-OUEST (inter-NETWORK et intra-NETWORK) passerait à travers le Principal Router (PR) ce qui alourdi la charge réseau. Les DVR (Distributed Virtual Routing) quand à eux sont là pour gérer les connexions EST-OUEST et ainsi le PR ne se concentre que sur les connexions NORD-SUD. Les DVR sont vu par OpenStack comme un seul routeur, ce qui permet que deux VM jaune (connecté aux network jaune) qui ne sont pas sur le même Compute-Node puissent interagir.
 
@@ -48,4 +54,17 @@ Majeur :
 Mineur :
 - Fault Tolerence : si Ground Control tombe en panne toute l'infrastructure tombe aussi car Keystone sera absent. Mais les connexions EST-OUEST fonctionneraient encore. Il suffirait de redéployer Ground Control à partir d'une snapshot fonctionnelle.
 - Fault Tolerence : si un compute node meurt alors ses donnés sont perdu. Pour y remédier il suffit de faire du mirroring (duplication de donnés en temps réel) avec Cinder. Où faire des snapshot avec Swift toutes les intervallent de temps.
+
+
+## Solution : L3 HA Gateway + DVR OVS
+
+![title](../../annexe/assets/macro-architecture_alt.svg)
+
+L'architecture est composée de :
+- un centre de contrôle, ici appelé *Ground Control* : gère les authentifications et toutes autres tâches relatives à la gestion d'OpenStack
+- plusieurs compute node, ici appelés *COMP-N* : sont des nodes dédiés à l'exécution des VM
+- deux Gateway node, ici appelés *Gateway-N* : ont pour but de gérer toutes les connexions NORD-SUD.
+
+## Connexion NORD-SUD
+
 
