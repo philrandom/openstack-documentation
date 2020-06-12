@@ -78,4 +78,6 @@ Le BFD monitoring est disponible via OVN (voir `/doc/1_OpenStack/1_Presentation_
 > **Attention** le BFD monitoring ne gère seulement les *link failures*, et non les *routing failures*
 
 #### VRRP
-Le Virtual Routing Redundancy Protocol (VRRP) est un *first hop redundancy protocol*.
+Le Virtual Routing Redundancy Protocol (VRRP) est un *first hop redundancy protocol* qui a pour but de garantir la HA aux niveaux des gateway.
+
+**Les possibilités** qu'offre cette methode est l'allégement en divisant la charge du trafic par le nombre de routeurs en assignant une partie des IP à un routeur précis. C'est le load sharing. 
