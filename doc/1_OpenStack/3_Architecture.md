@@ -67,4 +67,13 @@ L'architecture est composée de :
 
 ## Connexion NORD-SUD
 
+Il y a deux methodes pour gérer les failover.
 
+### BFD monitoring
+
+Le BFD monitoring est disponible via OVN (voir `/doc/1_OpenStack/1Presentation_modules.md`). BFD (Bidirectional Forwarding Detection) est un protocole réseaux qui envoie en continue des packets pour indiquer son état. 
+
+> **Attention** le BFD monitoring ne gère seulement les *link failures*, et non les *routing failures*
+
+### VRRP
+Le Virtual Routing Redundancy Protocol (VRRP) est un *first hop redundancy protocol*.

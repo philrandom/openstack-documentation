@@ -172,6 +172,18 @@ Ce qui permet une réponse bidirectionnel car pour la réponse le ROUTER pourra 
 EXT-----(src:200.0.0.1;dest:80.0.0.2)--->ROUTER---(src:192.168.1.1;dest:192.168.0.2)--->VM-A
 ```
 
+### Methode de Routage
+
+#### OpenvSwitch (OVS)
+
+#### Open Virtual Network (OVN)
+OVN est censé être le successeur de OVS. Autrement dit la future méthode de routage. Mais pour le moment OVN n'est pas stable et manque beaucoup de features. 
+Les features disponibles sont : 
+- Logical switches
+- Flexible L2/L3/L4 security policies
+- Distributed logical IPv4 and IPv6 routers
+- Native support for NAT, load-balancing, and DHCP
+- L2 and L3 gateways
 
 ### Sécurité
 
