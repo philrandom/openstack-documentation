@@ -73,7 +73,7 @@ Il y a deux methodes pour gérer les failover.
 
 ![title](../../annexe/assets/macro-architecture_alt_bfd_monitoring.svg)
 
-Le BFD monitoring est disponible via OVN (voir `/doc/1_OpenStack/1Presentation_modules.md`). BFD (Bidirectional Forwarding Detection) est un protocole réseaux qui envoie en continue des packets pour indiquer son état. 
+Le BFD monitoring est disponible via OVN (voir `/doc/1_OpenStack/1_Presentation_modules.md`). BFD (Bidirectional Forwarding Detection) est un protocole réseaux qui envoie en continue des packets pour indiquer son état. 
 
 > **Attention** le BFD monitoring ne gère seulement les *link failures*, et non les *routing failures*
 
