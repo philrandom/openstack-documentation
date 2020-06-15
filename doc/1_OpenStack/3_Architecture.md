@@ -16,6 +16,15 @@ Une des propositions, non détaillé ici, serait d'utiliser seulement un seul et
 - trafic Nord-Sud (VM vers EXT)
 - trafic EST-OUEST (inter-NETWORK et intra-NETWORK) 
 
+**Noeud :**
+- *Control node* : est un concepte simplifié. Dans la pratique, la HA est une obligation, qui consiste à toujours repliquer les noeuds pour faire face aux potentiels problemes de pannes ou maintenance. Le *control node* gère principalement les authentifications en continues, les messages queue, et accesoirement le dashboard. 
+  - database : eneregistre toutes les informationsconcernant les utilisateurs et les instances. typiquement une database par services.
+  - message queue : tout les messages openstack sont reçus et envoyés via le queue broker
+  - authentification : voir keystone
+  - image management : stocke et enregistre les metadata concernant les images pour le lancement des VM
+  - scheduling services : quelles ressources utiliser en premier. Gestion en fonction d'un algorithme.
+  - user dahboard : voir horizon
+  - API endpoint
 
 ## Solution : architecture DVR OpenvSwitch
 
