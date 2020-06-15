@@ -25,6 +25,7 @@ Une des propositions, non détaillé ici, serait d'utiliser seulement un seul et
   - scheduling services : quelles ressources utiliser en premier. Gestion en fonction d'un algorithme.
   - user dahboard : voir horizon
   - API endpoint
+- *Keystone node* : gestionnaire de `token` (agit comme un Active Directory ou Kerberos voir keystone). Authorise des tokens temporairement. Pour cela deux methode UUID et Fernet (détails dans `/doc/1_OpenStack/1_Presentation_module`). Nous allons ici utiliser [Fernet](https://docs.openstack.org/keystone/pike/admin/identity-fernet-token-faq.html) pour l'avantage quivant c'est qu'il ne requière pas particulièrement de database. Ainsi nous pouvons simplifier la distribution des clefs via `rsync` par ssh. La sécurité est garantie via plusieurs methode cryptographie.
 
 ## Solution : architecture DVR OpenvSwitch
 
