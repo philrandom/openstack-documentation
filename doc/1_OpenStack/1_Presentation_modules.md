@@ -219,16 +219,23 @@ Cinder est un Block Storage similaire à un filesystem classique, principalement
 Un cas concret peut être l'utilisation au seins d'un drive où un objet représente un utilisateur pour y stocké toutes les versions de chaque fichiers. Via des intégrations en PHP (`php-opencloud`), ruby (`ruby-openstack library`), Java (`jclouds library`) et Pyhton (`python-swiftclient`)  on peut ainsi utiliser OpenStack comme un drive.  
 Au seins d'OpenStack les objets peuvent aussi stocké tout un projet avec sa topologie d'un réseaux, ses adresses, ses VM ... Pour déployé une backup à partir d'une snapshot de tout le projet. [Voir doc : Back up and restore volumes and snapshots](https://docs.openstack.org/cinder/latest/admin/blockstorage-volume-backups.html) Pour le bon fonctionnement d'une restauration Swift travail avec Cinder.
 
-# Aodh
+## Aodh
 |catégorie  		|fonction							|
 |---				|---								|
 |telemetrie			|service d'alerte |
 
 Service d'alerte. enregistre en continue via API dans une base SQL.
 
-# Ceilometer
+## Ceilometer
 |catégorie  		|fonction							|
 |---				|---								|
 |telemetrie			|collecte de data  |
 
 Service de collecte de data sur les evenements incluant les message queue.
+
+## Horizon
+|catégorie  		|fonction							|
+|---				|---								|
+|dashboard			|web  |
+
+Développer par Cannonical. Il gère keystone, nova, neutron...
