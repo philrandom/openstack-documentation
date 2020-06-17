@@ -85,8 +85,8 @@ Est le module qui prépare la machine virtuelle et qui gère l'hyperviseur. Au n
 
 Ce module à pour principal objectif de charger une image base sur une VM. Glance ne stock pas les images; les images peuvent être stocké simplement sur le `filesystem` ou via Swift (module détaillé plus bas).Des images pre-built officielles sont [disponnible](https://docs.openstack.org/image-guide/obtain-images.html).
 
-| OS/distribution 	|  lien | login |
-|-----------------	|-------|-------|
+| OS/distribution 		|  lien | login |
+|-----------------		|-------|-------|
 |CentOS				| [6](http://cloud.centos.org/centos/6/images/)|centos|
 |					| [7](http://cloud.centos.org/centos/7/images/)|centos|
 |Debian				| [current](http://cdimage.debian.org/cdimage/openstack/)|debian|
@@ -95,6 +95,7 @@ Ce module à pour principal objectif de charger une image base sur une VM. Glanc
 |Suse				| [JeOS](https://software.opensuse.org/distributions/leap#JeOS-ports)|opensuse|
 |RedHat				| [RHEL 7 KVM](https://access.redhat.com/downloads/content/69/ver=/rhel---7/x86_64/product-downloads)|cloud-user|
 |Windows			| [Cloud](https://cloudbase.it/windows-cloud-images/)||
+|CirrOS				|	| (user cirros ; pass gocubsgo) |
 
 
 > **Attention** une des images de base proposé est CirrOS. **Il ne doit pas être utilisé en prod pour des raison de sécurité.** Uniquement utilisé en test car sa taille est très légère 12.7 MB.
