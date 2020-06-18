@@ -1,5 +1,8 @@
 #!/bin/bash
 # Mets en cache les jetons et permet de les securisé en les cryptants
+
+# WARNING prévut avec le serveur controle portant le nom os-ground-control.unilim.fr
+
 #yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 yum install memcached python3-memcached
 #yum update --disablerepo=epel
