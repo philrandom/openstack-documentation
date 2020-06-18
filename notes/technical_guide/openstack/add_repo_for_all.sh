@@ -29,12 +29,7 @@ EOF
 for item in ${arr[*]}
 do
 	echo "setting repo for $item"
-	
-	ssh root@os-$item.unilim.fr "ssh-keygen ; ssh-copy-id os-ground-control.unilim.fr"
-	# NOTE à n'utilisé que si packstack a mal executé l'ajout de repo
-	ssh root@os-$item.unilim.fr rm -f /etc/yum.repos.d/packstack_0.repo
-	# fin NOTE
-	
+
 	scp /etc/yum.repos.d/CentOS-PowerTools.repo root@os-$item.unilim.fr:/etc/yum.repos.d/.
 	scp script_de_preparation_environnement.sh root@os-$item.unilim.fr:/root/.
 	ssh root@os-$item.unilim.fr chmod +x script_de_preparation_environnement.sh
