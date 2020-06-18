@@ -29,8 +29,6 @@ EOF
 for item in ${arr[*]}
 do
 	echo "setting repo for $item"
-
-	scp /etc/yum.repos.d/CentOS-PowerTools.repo root@os-$item.unilim.fr:/etc/yum.repos.d/.
 	scp script_de_preparation_environnement.sh root@os-$item.unilim.fr:/root/.
 	ssh root@os-$item.unilim.fr chmod +x script_de_preparation_environnement.sh
 	ssh root@os-$item.unilim.fr ./script_de_preparation_environnement.sh
