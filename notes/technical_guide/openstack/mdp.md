@@ -1,5 +1,5 @@
 # ground_control
-160 ground_control  
+160 ground-control  
 
 # compute
 161 comp-1  
@@ -12,3 +12,9 @@
 
  # sql
  167  sql
+
+# Database
+root ; sql
+
+# rabbitmq
+rabbit
