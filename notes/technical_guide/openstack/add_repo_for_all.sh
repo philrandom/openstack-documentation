@@ -5,8 +5,9 @@
 # VERSION pour 2 comp-n + 1 control
 
 # list des noms machines 
-arr=(comp-1 comp-2 comp-3)
 #arr=(comp-1 comp-2 comp-3 sql gateway-1 gateway-2)
+arr=(comp-1 comp-2)
+
 
 
 cat << EOF > /etc/yum.repos.d/CentOS-PowerTools.repo
