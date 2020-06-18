@@ -6,7 +6,7 @@
 
 # list des noms machines 
 #arr=(comp-1 comp-2 comp-3 sql gateway-1 gateway-2)
-arr=(comp-1 comp-2)
+arr=(comp-1 comp-2 sql)
 
 
 
@@ -15,7 +15,7 @@ arr=(comp-1 comp-2)
 cat << EOF > script_de_preparation_environnement.sh
 #!/bin/sh
 echo "Preapration de l'environnement"
-yum update --disablerepo=epel
+#yum update --disablerepo=epel # recommander
 yum install -y centos-release-openstack-ussuri
 yum upgrade -y
 yum install -y python-openstackclient
