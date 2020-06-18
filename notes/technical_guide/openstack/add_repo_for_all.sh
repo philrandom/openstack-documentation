@@ -24,6 +24,7 @@ EOF
 cat << EOF > script_de_preparation_environnement.sh
 #!/bin/sh
 echo "Preapration de l'environnement"
+yum update --disablerepo=epel
 yum install centos-release-openstack-ussuri
 yum upgrade
 yum install python-openstackclient
