@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ 2 -gt $# ]
+if [ $# != 2 ]
 then
         echo "./set_sql_for_openstack.sh <ip_controller> <host_sql>"
         exit 1
