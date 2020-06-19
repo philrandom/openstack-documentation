@@ -16,7 +16,7 @@ EOF
 
 cat << EOF > /tmp/dis/openstack.cnf
 [mysqld]
-bind-address = $1
+bind-address = $2
 
 default-storage-engine = innodb
 innodb_file_per_table = on
