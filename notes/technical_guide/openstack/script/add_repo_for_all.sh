@@ -21,6 +21,9 @@ yum upgrade -y
 yum install -y python3-openstackclient
 # RHEL et CentOS active SELinux par defaut.pour eviter les problemes d'autorité liée à SELinux:
 yum install -y openstack-selinux
+echo "[DANGER] desactivation du parfeux..."
+systemctl stop firewalld
+systemctl disable firewalld
 echo "terminer"
 EOF
 
