@@ -55,7 +55,7 @@ ln -s /usr/share/keystone/wsgi-keystone.conf /etc/httpd/conf.d/
 echo "_________________________________________________________"
 echo "finalisation : demarage du service"
 systemctl enable httpd.service
-systemctl enable httpd.service
+systemctl start httpd.service
 
 export OS_USERNAME=admin
 export OS_PASSWORD=$1
