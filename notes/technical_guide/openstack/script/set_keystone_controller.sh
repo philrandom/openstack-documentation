@@ -17,6 +17,7 @@ cat << EOF > /tmp/keystone/keystone_db.sql
 CREATE DATABASE keystone;
 GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' IDENTIFIED BY '$1';
 GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' IDENTIFIED BY '$1';
+GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'$2' IDENTIFIED BY '$1';
 EOF
 echo "envoie et execution sur host_sql"
 scp /tmp/keystone/keystone_db.sql root@$2:/root/.
