@@ -19,13 +19,13 @@ GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' IDENTIFIED BY '$1';
 GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' IDENTIFIED BY '$1';
 EOF
 echo "envoie et execution sur host_sql"
-#scp /tmp/keystone/keystone_db.sql root@$2:/root/.
-#ssh root@$2 mysql -u root -p < keystone_db.sql
+scp /tmp/keystone/keystone_db.sql root@$2:/root/.
+ssh root@$2 mysql -u root -p < keystone_db.sql
 
 
 echo "_________________________________________________________"
 echo "insatallationdes packets"
-#yum install -y openstack-keystone httpd python3-mod_wsgi
+yum install -y openstack-keystone httpd python3-mod_wsgi
 
 echo "_________________________________________________________"
 echo "configuration de keystone pour connection à la database $2"
