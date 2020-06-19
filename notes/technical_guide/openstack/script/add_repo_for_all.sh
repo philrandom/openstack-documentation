@@ -24,17 +24,15 @@ yum install -y openstack-selinux
 echo "terminer"
 EOF
 
-
+chmod +x script_de_preparation_environnement.sh
 
 for item in ${arr[*]}
 do
 	echo "setting repo for $item"
 	scp script_de_preparation_environnement.sh root@os-$item.unilim.fr:/root/.
-	ssh root@os-$item.unilim.fr chmod +x script_de_preparation_environnement.sh
 	ssh root@os-$item.unilim.fr ./script_de_preparation_environnement.sh
 	clear
 done
 
 echo "setting repo for controller"
-chmod +x script_de_preparation_environnement.sh
 ./script_de_preparation_environnement.sh
