@@ -86,6 +86,7 @@ echo "le password est $1"
 openstack --os-auth-url http://$3:5000/v3 \
   --os-project-domain-name Default --os-user-domain-name Default \
   --os-project-name admin --os-username admin token issue
+echo "le password est celui de myuser"
 openstack --os-auth-url http://$3:5000/v3 \
   --os-project-domain-name Default --os-user-domain-name Default \
   --os-project-name myproject --os-username myuser token issue
