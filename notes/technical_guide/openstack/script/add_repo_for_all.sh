@@ -18,7 +18,7 @@ echo "Preapration de l'environnement"
 #yum update --disablerepo=epel # recommander
 yum install -y centos-release-openstack-ussuri
 yum upgrade -y
-yum install -y python-openstackclient
+yum install -y python3-openstackclient
 # RHEL et CentOS active SELinux par defaut.pour eviter les problemes d'autorité liée à SELinux:
 yum install -y openstack-selinux
 echo "terminer"
@@ -38,4 +38,3 @@ done
 echo "setting repo for controller"
 chmod +x script_de_preparation_environnement.sh
 ./script_de_preparation_environnement.sh
-
