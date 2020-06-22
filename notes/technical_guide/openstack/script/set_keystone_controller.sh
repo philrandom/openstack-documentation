@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ $# !=  3 ]; then
-	echo "./set_keystone_controller.sh <KEYSTONE_DBPASS> <host_sql> <host_controller>"
+if [ $# !=  4 ]; then
+	echo "./set_keystone_controller.sh <KEYSTONE_DBPASS> <host_sql> <host_controller> <sql_passsword>"
 	echo
 	echo "recommandation pour tout mots de passe utiliser : "
 	echo "       openssl rand -hex 10"
@@ -20,7 +20,7 @@ GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' IDENTIFIED BY '$1';
 GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'$2' IDENTIFIED BY '$1';
 EOF
 echo "envoie et execution sur host_sql"
-ssh root@$2 mysql -u root -p < /tmp/keystone/keystone_db.sql
+ssh root@$2 mysql -u root --password=$4 < /tmp/keystone/keystone_db.sql
 
 
 echo "_________________________________________________________"
