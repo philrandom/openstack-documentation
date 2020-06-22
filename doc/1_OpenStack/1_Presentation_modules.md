@@ -83,6 +83,14 @@ Est le module qui prépare la machine virtuelle et qui gère l'hyperviseur. Au n
 **À propos de LXC**. LXC embarque libvirt depuis peu, mais il n'est pas sécurisé pour la multi-collocation.  
 **À propos de libvirt**. Il est important de vérifier les failles de sécurité de libvirt, si utilisé, car il peut fortement impacté la conteneurisation. *Voir [CVE-2019-5736](https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html) : s'echaper du conteneur via les PID.*
 
+## Placement
+|catégorie  		|fonction							|
+|---				|---								|
+|service partagé	|allocation de ressources			|
+
+
+Placement est un module extrait de **Nova** depuis la version Stein. Il est definit comme un core module. En effet, son rôle premier est l'allocation en tout genre que ce soit cpu, memoire, espace de stockage, ou même ip.
+
 ## Glance
 |catégorie  		|fonction							|
 |---				|---								|
