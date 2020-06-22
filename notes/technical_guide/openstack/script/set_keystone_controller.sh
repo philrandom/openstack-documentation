@@ -20,8 +20,7 @@ GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' IDENTIFIED BY '$1';
 GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'$2' IDENTIFIED BY '$1';
 EOF
 echo "envoie et execution sur host_sql"
-scp /tmp/keystone/keystone_db.sql root@$2:/root/.
-ssh root@$2 mysql -u root -p < keystone_db.sql
+ssh root@$2 mysql -u root -p < /tmp/keystone/keystone_db.sql
 
 
 echo "_________________________________________________________"
