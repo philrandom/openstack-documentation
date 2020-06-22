@@ -56,6 +56,8 @@ echo "finalisation : demarage du service"
 systemctl enable httpd.service
 systemctl start httpd.service
 
+
+cat << EOF > admin-openrc
 export OS_USERNAME=admin
 export OS_PASSWORD=$1
 export OS_PROJECT_NAME=admin
@@ -63,7 +65,8 @@ export OS_USER_DOMAIN_NAME=Default
 export OS_PROJECT_DOMAIN_NAME=Default
 export OS_AUTH_URL=http://$3:5000/v3
 export OS_IDENTITY_API_VERSION=3
-
+EOF
+. admin-openrc
 
  
 echo "_________________________________________________________"
@@ -82,6 +85,7 @@ openstack role add --project myproject --user myuser myrole
 echo "_________________________________________________________"
 echo "TESTING............."
 echo "le password est $1"
+unset OS_PASSWORD
 openstack --os-auth-url http://$3:5000/v3 \
   --os-project-domain-name Default --os-user-domain-name Default \
   --os-project-name admin --os-username admin token issue
@@ -90,3 +94,4 @@ openstack --os-auth-url http://$3:5000/v3 \
   --os-project-domain-name Default --os-user-domain-name Default \
   --os-project-name myproject --os-username myuser token issue
 
+. admin-openrc
