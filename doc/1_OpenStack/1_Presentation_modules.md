@@ -88,7 +88,7 @@ Est le module qui prépare la machine virtuelle et qui gère l'hyperviseur. Au n
 |---				|---								|
 |service partagé	|management d'image pour VM			|
 
-Ce module à pour principal objectif de charger une image base sur une VM. Glance ne stock pas les images; les images peuvent être stocké simplement sur le `filesystem` ou via Swift (module détaillé plus bas).Des images pre-built officielles sont [disponnible](https://docs.openstack.org/image-guide/obtain-images.html).
+Ce module à pour principal objectif de charger une image base sur une VM. Glance ne stock pas les images; les images peuvent être stocké simplement sur le `filesystem` ou via Swift (module détaillé plus bas). Des images pre-built officielles sont [disponnible](https://docs.openstack.org/image-guide/obtain-images.html).
 
 | OS/distribution 		|  lien | login |
 |-----------------		|-------|-------|
@@ -105,7 +105,7 @@ Ce module à pour principal objectif de charger une image base sur une VM. Glanc
 
 > **Attention** une des images de base proposé est CirrOS. **Il ne doit pas être utilisé en prod pour des raison de sécurité.** Uniquement utilisé en test car sa taille est très légère 12.7 MB.
 
-
+Glance a besoin d'acceder à une base de données pour y stocké toutes les metadata concernant l'utilisation de ses images.
 
 ## Neutron
 
