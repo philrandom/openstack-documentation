@@ -21,7 +21,7 @@ GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'$2' IDENTIFIED BY '$1';
 EOF
 echo "envoie et execution sur host_sql"
 ssh root@$2 mysql -u root --password=$4 < /tmp/keystone/keystone_db.sql
-
+ssh root@$2 systemctl restart mariadb 
 
 echo "_________________________________________________________"
 echo "insatallationdes packets"
