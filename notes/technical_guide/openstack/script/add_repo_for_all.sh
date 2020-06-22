@@ -19,9 +19,23 @@ echo "Preapration de l'environnement"
 yum install -y centos-release-openstack-ussuri
 yum upgrade -y
 yum install -y python3-openstackclient
-# RHEL et CentOS active SELinux par defaut.pour eviter les problemes d'autorité liée à SELinux:
+# RHEL et CentOS active SELinux par defaut.pour eviter 
+# les problemes d'autorité liée à SELinux.
+# Si une erreure persiste, nottament lors de l'activation
+# de etcd, alors forcez  SELINUX=permissive 
+# dans /etc/selinux/config
+# SELINUx n'est pas la seul source d'erreurs de etcd
+# veillez lancer les services dans le bonne ordre
+# du premier au dernier :
+# - memcached
+# - etcd
+# - httpd
 yum install -y openstack-selinux
 echo "[DANGER] desactivation du parfeux..."
+# lorsque le parefeux n'est pas desactiver il peut causer 
+# plusieurs erreurs d'acces tels que ERR 504 Bad Gateway
+# lors d'une execution openstack faiseant appel à une 
+# base sql externe lors d'une validation d'identité 
 systemctl stop firewalld
 systemctl disable firewalld
 echo "terminer"
