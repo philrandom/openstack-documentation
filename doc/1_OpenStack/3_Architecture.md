@@ -17,15 +17,18 @@ Une des propositions, non détaillé ici, serait d'utiliser seulement un seul et
 - trafic EST-OUEST (inter-NETWORK et intra-NETWORK) 
 
 **Noeud :**
-- *Control node* : est un concepte simplifié. Dans la pratique, la HA est une obligation, qui consiste à toujours repliquer les noeuds pour faire face aux potentiels problemes de pannes ou maintenance. Le *control node* gère principalement les authentifications en continues, les messages queue, et accesoirement le dashboard. 
-  - database : eneregistre toutes les informationsconcernant les utilisateurs et les instances. typiquement une database par services.
+- *Controller node* : est un concepte simplifié. Dans la pratique, la HA est une obligation, qui consiste à toujours repliquer les noeuds pour faire face aux potentiels problemes de pannes ou maintenances. Le *control node* gère principalement les authentifications en continues, les messages queue, et accesoirement le dashboard. 
+  - database : eneregistre toutes les informations concernant les utilisateurs et les instances. typiquement une database par services. (Possibilité de détaché la database du Control node pour chaque services).
   - message queue : tout les messages openstack sont reçus et envoyés via le queue broker
   - authentification : voir keystone
   - image management : stocke et enregistre les metadata concernant les images pour le lancement des VM
   - scheduling services : quelles ressources utiliser en premier. Gestion en fonction d'un algorithme.
   - user dahboard : voir horizon
   - API endpoint
-- *Keystone node* : gestionnaire de `token` (agit comme un Active Directory ou Kerberos voir keystone). Authorise des tokens temporairements. Pour cela deux methodes UUID et Fernet (détails dans `/doc/1_OpenStack/1_Presentation_module`). Nous allons ici utiliser [Fernet](https://docs.openstack.org/keystone/pike/admin/identity-fernet-token-faq.html) pour l'avantage principal qu'il ne requière pas de database, il est ainsi scalable. Ainsi nous pouvons simplifier la distribution des clefs via `rsync` par ssh. La sécurité est garantie via plusieurs methodes cryptographiques.
+- *Keystone node* : gestionnaire de `token` (agit comme un Active Directory ou Kerberos voir keystone). Authorise des tokens temporairements. Pour cela deux methodes UUID et Fernet (détails dans `/doc/1_OpenStack/1_Presentation_module`). Nous allons ici utiliser [Fernet](https://docs.openstack.org/keystone/pike/admin/identity-fernet-token-faq.html) pour l'avantage principal qu'il est scalable. Ainsi nous pouvons simplifier la distribution des clefs via `rsync` par ssh. La sécurité des jetons est garantie via plusieurs methodes cryptographiques.
+- *Calcul node* : est un noeud destiné à l'execution des VM. Le module principal utilisé dessus est Nova. Les noeuds de calcul partage leurs ressources par un algoorithme afin de faire une utilisation optimal des ressources. Ces ordres de repartition de ressources sont gérée depuis le controller node par le module Placement.
+
+- **ATTENTION** : Pour la *base de données*, il est préférable de la séparer du controller node, pour plusieurs raisons, pour ainsi les répliquer. Lors de mise à jour, il se peut que d'importante restructuration SQL soit tel qu'il y a une obligation de backup, de destruction, restructuration, repopulation, et insertion de données issue des backup, et redemarage du moteur SQL; Ce fut le cas lors du passage de Stein à Train avec l'extraction du module Placement. Ainsi la redondence de la base de données, permettra de faire toutes ces operations de manière invisible pour les utilisateurs. Il existe une possibilité de **créer une relation master/slave avec une database secondaire**. La slave database prend le relais si le temps de latence du master est supérieur 100ms. **L'écriture master/slave n'est pas instantanné, c'est la responsabilité de l'operateur**. La base sql peut utiliser MySQL, Postgre, ... La module python utilisé par défaut est SQLalchemy.
 
 ## Solution : architecture DVR OpenvSwitch
 
