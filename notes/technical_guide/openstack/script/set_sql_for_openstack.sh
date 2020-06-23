@@ -39,7 +39,6 @@ cat /tmp/dis/dis_suite >> distant_install_sql.sh
 
 rm -r /tmp/dis
 
-
+chmod +x distant_install_sql.sh
 scp distant_install_sql.sh root@os-$2.unilim.fr:/root/.
-ssh root@os-$2.unilim.fr chmod +x distant_install_sql.sh
 ssh root@os-$2.unilim.fr ./distant_install_sql.sh
