@@ -36,6 +36,7 @@ Ici sont présenté l'architecture au sein des modules. Comment ils communiquent
 ### [Nova](https://docs.openstack.org/nova/ussuri/user/cellsv2-layout.html#service-layout)
 #### Simple
 ![un compute node](../../annexe/assets/nova_simple.png)
+Cette architecture s'applique pour un seul *compute node*.  Tout les services communiquent entre eux par le même message bus, et il n'y a qu'une seul database cell.  La database `cell0` est toujours présente et requise.
 #### Multiple Cells
 ![plusieurs compute node](../../annexe/assets/nova_multiple.png)
 
