@@ -68,7 +68,7 @@ else
         cd $service ; python3 setup.py install
 	cd $service
 	
-	ck_pkg=1
+	ck_pkg=0
 	
 	while [[ $ck_pkg == 0 ]] ; do
 		./tools/generate_config_file_samples.sh
