@@ -85,6 +85,8 @@ Pour choisir un hyperviseur, veillez consulter [ce tableau qui traite sur les di
 **À propos de LXC**. LXC embarque libvirt depuis peu, mais il n'est pas sécurisé pour la multi-collocation.  
 **À propos de libvirt**. Il est important de vérifier les failles de sécurité de libvirt, si utilisé, car il peut fortement impacté la conteneurisation. *Voir [CVE-2019-5736](https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html) : s'echaper du conteneur via les PID.*
 
+> **Attention** il est important de noter que la migration des instances entre les *compute nodes* n'est pas encore supporté (version Ussuri). [voir ici](https://docs.openstack.org/nova/ussuri/user/cellsv2-layout.html#cross-cell-instance-migrations)
+
 ### Organisation
 
 Nova est organisé de la sorte :
