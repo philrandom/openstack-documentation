@@ -148,6 +148,13 @@ Neutron est responsable de la définition du réseaux pour les VM. Il leur assig
 [//]: <> (src image : https://fr.wikipedia.org/wiki/Software-defined_networking#/media/Fichier:Software_Defined_Networking_System_Overview.fr.svg)
 [//]: <> (../../annexe/assets/SDN.png)
 
+
+### Composition
+Neutron s'organise en plusieurs composants : 
+- `neutron-server` acccepte et route les requette API au bon Network plug-in.
+- **Openstack networking plug-in agent** permet la creation des `networks` et `subnets`, des plu et unplug les ports. les agents varient en fonction de la methode utilisé linux bridges, Open vSwitch, OVN... Les agents les plus communs sont L3, DHCP.
+- *Message queue* permet la communication entre `neutron-server` et plusieurs autres agents. Egalement peut être utilisé comme database pour enregistrer l'etat du réseau.
+
 ### Architecture
 **NETWORK** est comparable à un réseaux VLAN dans les réseaux classiques mais avec plus de flexibilité. Le VLAN est une logique de découpage qui permet notamment de séparer deux différent VLAN se trouvant sur le même réseaux. Chaque réseaux VLAN à son domaine de broadcast d'associé. De manière similaire les NETWORK sous OpenStack associé un broadcast à chaque réseaux.  
 La séparation des NETWORKS est appelé **méthode de segmentation**. OpenStack embarque avec lui plusieurs méthode comme :
