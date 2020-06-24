@@ -66,7 +66,6 @@ else
         cd devstack
         git clone -b $version https://opendev.org/openstack/$service.git
         cd $service ; python3 setup.py install
-	cd $service
 	
 	ck_pkg=0
 	
