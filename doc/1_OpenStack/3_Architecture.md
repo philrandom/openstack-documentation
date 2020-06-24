@@ -39,6 +39,10 @@ Ici sont présenté l'architecture au sein des modules. Comment ils communiquent
 Cette architecture s'applique pour un seul *compute node*.  Tout les services communiquent entre eux par le même message bus, et il n'y a qu'une seul database cell.  La database `cell0` est toujours présente et requise.
 #### Multiple Cells
 ![plusieurs compute node](../../annexe/assets/nova_multiple.png)
+> *Remarque* l'architecture est similaire à la premiere, car en effet elle est une extension au niveau du *condutor*. 
+
+Les messages bus sont séparé en fonction des cells. Le **super-conductor** à acces à l'API.  
+**Important** les *cells* n'ont que la capacité de communiquer avec l'API `placement` (pour la gestion des ressources). Les cells n'ont pas la capacité de communiqué avec les autre couches API tels que API databse ou encore l'API de communication interne RPC.
 
 ## Solution : architecture DVR OpenvSwitch
 
