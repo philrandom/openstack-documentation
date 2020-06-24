@@ -66,7 +66,19 @@ else
         git clone -b $version https://opendev.org/openstack/$service.git
         cd $service ; python3 setup.py install
 	cd $service
-	./tools/generate_config_file_samples.sh
+	
+	ck_pkg=1
+	
+	while [[ $ck_pkg == 0 ]] ; do
+		./tools/generate_config_file_samples.sh
+		if [[ $? != 0 ]] ; then
+			./tools/generate_config_file_samples.sh > /tmp/pkg_erreur
+			pip3 install $(cat /tmp/pkg_erreur | grep ModuleNotFoundError | sed "s/ModuleNotFoundError: No module named '//" | sed "s/'//")
+			ck_pkg=0
+		else
+			ck_pkg=1
+		fi
+	done
 	cp /usr/local/etc/$service /etc/$service/
 fi
 }
