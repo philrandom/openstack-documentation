@@ -85,6 +85,18 @@ Pour choisir un hyperviseur, veillez consulter [ce tableau qui traite sur les di
 **À propos de LXC**. LXC embarque libvirt depuis peu, mais il n'est pas sécurisé pour la multi-collocation.  
 **À propos de libvirt**. Il est important de vérifier les failles de sécurité de libvirt, si utilisé, car il peut fortement impacté la conteneurisation. *Voir [CVE-2019-5736](https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html) : s'echaper du conteneur via les PID.*
 
+### Organisation
+
+Nova est organisé de la sorte :
+- `nova-api` gère les REST API exterieur de nova, autement dit gère les interractionavec les autres modules et les utilisateurs.
+- `nova-scheduler` et `placement` sont les services responsablent du tracking des ressources et des decision d'execution.
+- *API database* utilisé par `nova-api` et `nova-scheduler`, conserve des information concernant les instances comme la location (sur quel compute node est executé telle instance) et les instances futures. 
+- `nova-conductor` 
+- `nova-compute` gère les *virt driver* et les hyperviseur.
+- *cell database* est utilisée par l'API, le *nova-conductor* et *nova-compute*, enregistre la major partie des informations à propos des instances.
+- *cell0 database* gère que les instance qui échoue lors d'allocation de ressources.
+- *message queue* permet la communication au sein de nova via RPC.
+
 ## Placement
 |catégorie  		|fonction							|
 |---				|---								|
