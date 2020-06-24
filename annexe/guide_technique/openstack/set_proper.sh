@@ -61,11 +61,11 @@ if [[ $UTILISATION_DEPOT_OFFICIEL == y ]] ; then
        
 else
         echo "depuis les sources..."
-        cp /usr/local/etc/glance /etc/glance/
+        cp /usr/local/etc/$service /etc/$service/
         mkdir devstack
         cd devstack
         git clone -b $version https://opendev.org/openstack/$service.git
-        cd glance ; python3 setup.py install
+        cd $service ; python3 setup.py install
 fi
 }
 
