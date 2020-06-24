@@ -80,6 +80,7 @@ else
 		fi
 	done
 	cp -r etc/$service/ /etc/$service/
+	cp etc/$service.conf.ini /etc/$service/$service.conf
 fi
 }
 
