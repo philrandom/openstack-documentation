@@ -30,6 +30,15 @@ Une des propositions, non détaillé ici, serait d'utiliser seulement un seul et
 
 - **ATTENTION** : Pour la *base de données*, il est préférable de la séparer du controller node, pour plusieurs raisons, pour ainsi les répliquer. Lors de mise à jour, il se peut que d'importante restructuration SQL soit tel qu'il y a une obligation de backup, de destruction, restructuration, repopulation, et insertion de données issue des backup, et redemarage du moteur SQL; Ce fut le cas lors du passage de Stein à Train avec l'extraction du module Placement. Ainsi la redondence de la base de données, permettra de faire toutes ces operations de manière invisible pour les utilisateurs. Il existe une possibilité de **créer une relation master/slave avec une database secondaire**. La slave database prend le relais si le temps de latence du master est supérieur 100ms. **L'écriture master/slave n'est pas instantanné, c'est la responsabilité de l'operateur**. La base sql peut utiliser MySQL, Postgre, ... La module python utilisé par défaut est SQLalchemy.
 
+
+## Service Layout
+Ici sont présenté l'architecture au sein des modules. Comment ils communiquent entre les différent sous modules.
+### [Nova](https://docs.openstack.org/nova/ussuri/user/cellsv2-layout.html#service-layout)
+#### Simple
+[!title](../../annexe/assets/nova-simple.png)
+#### Multiple Cells
+[!title](../../annexe/assets/nova-multiple.png)
+
 ## Solution : architecture DVR OpenvSwitch
 
 ![title](../../annexe/assets/macro-architecture.svg)
