@@ -35,9 +35,9 @@ Une des propositions, non détaillé ici, serait d'utiliser seulement un seul et
 Ici sont présenté l'architecture au sein des modules. Comment ils communiquent entre les différent sous modules.
 ### [Nova](https://docs.openstack.org/nova/ussuri/user/cellsv2-layout.html#service-layout)
 #### Simple
-[!title](../../annexe/assets/nova-simple.png)
+![un compute node](../../annexe/assets/nova_simple.png)
 #### Multiple Cells
-[!title](../../annexe/assets/nova-multiple.png)
+![plusieurs compute node](../../annexe/assets/nova_multiple.png)
 
 ## Solution : architecture DVR OpenvSwitch
 
