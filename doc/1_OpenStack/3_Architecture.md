@@ -110,3 +110,5 @@ Le Virtual Routing Redundancy Protocol (VRRP) est un *first hop redundancy proto
 **Les possibilités** qu'offre cette methode est l'allégement en divisant la charge du trafic par le nombre de routeurs en assignant une partie des IP à un routeur précis. C'est le load sharing.  
 
 **Si l'un des routeurs perd la connectivité :** Premierement les routeurs possède des Virtual IP (VIP). Les routuers possèdes une VIP master. Les routeur fonctionnel envoie en continue un `hello` VRRP depuis leur VIP master aux autres routeurs.
+
+Pour la configuration des VRRP avec des *gateway node* distincts du *controller node* suivre [cette doc archi L3HA VRRP](https://docs.openstack.org/liberty/networking-guide/scenario-l3ha-ovs.html)
