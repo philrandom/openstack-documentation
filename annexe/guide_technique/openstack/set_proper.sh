@@ -65,6 +65,8 @@ else
         cd devstack
         git clone -b $version https://opendev.org/openstack/$service.git
         cd $service ; python3 setup.py install
+	cd $service
+	./tools/generate_config_file_samples.sh
 	cp /usr/local/etc/$service /etc/$service/
 fi
 }
