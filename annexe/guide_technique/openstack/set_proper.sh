@@ -86,13 +86,13 @@ fi
 
 creation_systmed_service() {
 
-	service=$1
-	specific_packet=$2 # ex : glance-api
+	service=$1 # ex:glance-api ex:neutron-server
+	
 	
         echo "creation du service openstack-$service"
 cat << EOF > /etc/systemd/system/openstack-$service.service
 [Unit]
-Description=Start $specific_packet for openstack
+Description=Start $service for openstack
 After=httpd.service
 StartLimitIntervalSec=0
 [Service]
@@ -100,7 +100,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=centos
-ExecStart=/usr/local/bin/$specific_packet
+ExecStart=/usr/local/bin/$service
 [Install]
 WantedBy=multi-user.target
 EOF
