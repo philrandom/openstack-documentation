@@ -18,7 +18,7 @@ echo "Preapration de l'environnement"
 #yum update --disablerepo=epel # recommander
 yum install -y centos-release-openstack-ussuri
 yum upgrade -y
-yum install -y python3-openstackclient gcc
+yum install -y python3-openstackclient gcc *-python-devel *-python3-devel
 # RHEL et CentOS active SELinux par defaut.pour eviter 
 # les problemes d'autorité liée à SELinux.
 # Si une erreure persiste, nottament lors de l'activation
