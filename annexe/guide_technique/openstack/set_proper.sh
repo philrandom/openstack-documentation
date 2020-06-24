@@ -45,8 +45,9 @@ create_api_endpoint() {
 
 question_install_from_src() {
 
-        service=$1
-        version=$2              # version openstack exemple stable/train stable/ussuri master
+        
+        version=$1              # version openstack exemple stable/train stable/ussuri master
+	service=$2
 
 
 echo "INSTALLATION $service version $version"
