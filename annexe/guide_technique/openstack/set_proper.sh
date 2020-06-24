@@ -47,7 +47,6 @@ question_install_from_src() {
 
         service=$1
         version=$2              # version openstack exemple stable/train stable/ussuri master
-        specific_packet=$3      # ex: glance-api
 
 
 echo "INSTALLATION $service version $version"
@@ -58,20 +57,23 @@ echo "       sinon repondez uniquement 'y'."
 read -p "Utilisez le depot officiel ? [y/N]: " UTILISATION_DEPOT_OFFICIEL
 if [[ $UTILISATION_DEPOT_OFFICIEL == y ]] ; then
         echo "depuis depot officiel..."
-        # L'installation via les depots officiel n'est pas bien maintenue
         yum install -y openstack-$service
-        #_service=openstack-glance-api
+       
 else
         echo "depuis les sources..."
         cp /usr/local/etc/glance /etc/glance/
-        #glance_api_service=glance-api
-        # donc nous passons à une installation depuis les sources
         mkdir devstack
         cd devstack
         git clone -b $version https://opendev.org/openstack/$service.git
         cd glance ; python3 setup.py install
-        #git clone -b stable/ussuri https://opendev.org/openstack/python-glanceclient.git
-        #cd python-glanceclient ; python3 setup.py install
+fi
+}
+
+creation_systmed_service() {
+
+	service=$1
+	specific_packet=$2 # ex : glance-api
+	
         echo "creation du service openstack-$service"
 cat << EOF > /etc/systemd/system/openstack-$service.service
 [Unit]
@@ -87,6 +89,5 @@ ExecStart=/usr/local/bin/$specific_packet
 [Install]
 WantedBy=multi-user.target
 EOF
-        # Fin de l'installation depuis les sources
-fi
+
 }
