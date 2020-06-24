@@ -87,6 +87,8 @@ Pour choisir un hyperviseur, veillez consulter [ce tableau qui traite sur les di
 
 > **Attention** il est important de noter que la migration des instances entre les *compute nodes* n'est pas encore supporté (version Ussuri). [voir ici](https://docs.openstack.org/nova/ussuri/user/cellsv2-layout.html#cross-cell-instance-migrations)
 
+Des option avancé sont [disponible](https://docs.openstack.org/nova/ussuri/admin/index.html) comme l'utilisation de GPU, securisation, topologie CPU....
+
 ### Organisation
 
 Nova est organisé de la sorte :
