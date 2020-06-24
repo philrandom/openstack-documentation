@@ -79,7 +79,7 @@ else
 			ck_pkg=1
 		fi
 	done
-	cp /usr/local/etc/$service /etc/$service/
+	cp -r etc/$service/ /etc/$service/
 fi
 }
 
