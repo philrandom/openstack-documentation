@@ -80,6 +80,8 @@ Est le module qui prépare la machine virtuelle et qui gère l'hyperviseur. Au n
 |**bare-metal**	(execution sur machine physique)|
 |Ironic (module d'OpenStack)		|
 
+Pour choisir un hyperviseur, veillez consulter [ce tableau qui traite sur les différentes features que gère chaque hyperviseur](https://docs.openstack.org/nova/ussuri/user/feature-classification.html#matrix-gp). 
+
 **À propos de LXC**. LXC embarque libvirt depuis peu, mais il n'est pas sécurisé pour la multi-collocation.  
 **À propos de libvirt**. Il est important de vérifier les failles de sécurité de libvirt, si utilisé, car il peut fortement impacté la conteneurisation. *Voir [CVE-2019-5736](https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html) : s'echaper du conteneur via les PID.*
 
