@@ -103,9 +103,9 @@ ExecStart=/usr/local/bin/$service
 WantedBy=multi-user.target
 EOF
 
-	if [[ $? == 0 ]] ; do 
+	if [[ $? == 0 ]] ; then 
 		echo "[ OK ] creation du service openstack-$service"
 	else
 		echo "[FAIL] creation du service openstack-$service"
-	done
+	fi
 }
