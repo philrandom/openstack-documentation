@@ -32,7 +32,8 @@ verifier qu'il soit bien affecter à un role.
 
 ### Could not retrieve schema from tcp:127.0.0.1:6640
 
+N'arrive pas à joindre ovsdbapp qui est un module python installé avec neutron.  
+
 > IANA has assigned TCP port 6640 for this protocol - [rfc7047](https://tools.ietf.org/html/rfc7047)  
 
-Tout simplement, il manque le service [ovsdbapp](https://opendev.org/openstack/ovsdbapp)
-
+Il faut installer `yum install openvswitch-devel rdo-openvswitch-devel` et lancer le service `systemctl start openvswitch`.
