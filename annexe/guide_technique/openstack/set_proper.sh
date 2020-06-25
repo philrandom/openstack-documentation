@@ -84,12 +84,10 @@ else
 fi
 }
 
-creation_systmed_service() {
+creation_systemd_service() {
 
 	service=$1 # ex:glance-api ex:neutron-server
-	
-	
-        echo "creation du service openstack-$service"
+
 cat << EOF > /etc/systemd/system/openstack-$service.service
 [Unit]
 Description=Start $service for openstack
@@ -105,4 +103,9 @@ ExecStart=/usr/local/bin/$service
 WantedBy=multi-user.target
 EOF
 
+	if [[ $? == 0 ]] ; do 
+		echo "[ OK ] creation du service openstack-$service"
+	else
+		echo "[FAIL] creation du service openstack-$service"
+	done
 }
