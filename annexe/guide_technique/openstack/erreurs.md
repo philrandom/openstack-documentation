@@ -26,3 +26,12 @@ Peut apparaitre lors d'une population ou sous la forme d'une erreur 500 http. Ce
 ### Impossible d'acceder à un utilisateur existant 
 
 verifier qu'il soit bien affecter à un role.
+
+
+## Neutron
+
+### Could not retrieve schema from tcp:127.0.0.1:6640
+
+> IANA has assigned TCP port 6640 for this protocol - [rfc7047](https://tools.ietf.org/html/rfc7047)
+Tout simplement, il manque le service [ovsdbapp](https://opendev.org/openstack/ovsdbapp
+
