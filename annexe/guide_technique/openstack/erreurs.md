@@ -43,4 +43,31 @@ Il faut installer `yum install openvswitch-devel rdo-openvswitch-devel` et lance
 Configurer `/etc/neutron/neutron.conf` et parametrer `transport_url = rabbit://`. 
 Une fois, fonctionnel, grace à un sniffer on peut observer les échanges tagés par `AMQP 74 Heartbeat`.
 
+### auth_url
+
+```
+[root@os-gateway-1 neutron]# neutron agent-list
+neutron CLI is deprecated and will be removed in the future. Use openstack CLI instead.
+Auth plugin requires parameters which were not given: auth_url
+```
+
+recopiez le fichier `admin-openrc` du *controller node* :
+
+```
+[root@os-gateway-1 neutron]# scp root@os-ground-control.unilim.fr:/root/admin-openrc ~
+The authenticity of host 'os-ground-control.unilim.fr (164.81.15.160)' can't be established.
+ECDSA key fingerprint is SHA256:HaYF5rkpGefnBcJ6wkiMN0QLk1q0x08NKxg2O/A9C7M.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'os-ground-control.unilim.fr,164.81.15.160' (ECDSA) to the list of known hosts.
+root@os-ground-control.unilim.fr's password:
+admin-openrc                                                                   100%  280    13.1KB/s   00:00
+[root@os-gateway-1 neutron]# cd
+[root@os-gateway-1 ~]# . admin-openrc
+[root@os-gateway-1 ~]# neutron agent-list
+neutron CLI is deprecated and will be removed in the future. Use openstack CLI instead.
+public endpoint for network service not found
+```
+
+Vous pouvez par la suite lancer les services.
+
 
