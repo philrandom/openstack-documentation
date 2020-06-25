@@ -87,11 +87,11 @@ fi
 creation_systemd_service() {
 
 	service=$1 # ex:glance-api ex:neutron-server
-
+	after=$2	#demarrer le service après
 cat << EOF > /etc/systemd/system/openstack-$service.service
 [Unit]
 Description=Start $service for openstack
-After=httpd.service
+After=$after.service
 StartLimitIntervalSec=0
 [Service]
 Type=simple
