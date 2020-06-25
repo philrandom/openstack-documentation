@@ -37,3 +37,10 @@ N'arrive pas à joindre ovsdbapp qui est un module python installé avec neutron
 > IANA has assigned TCP port 6640 for this protocol - [rfc7047](https://tools.ietf.org/html/rfc7047)  
 
 Il faut installer `yum install openvswitch-devel rdo-openvswitch-devel` et lancer le service `systemctl start openvswitch`.
+
+
+### rabbitmq
+Configurer `/etc/neutron/neutron.conf` et parametrer `transport_url = rabbit://`. 
+Une fois, fonctionnel, grace à un sniffer on peut observer les échanges tagés par `AMQP 74 Heartbeat`.
+
+
