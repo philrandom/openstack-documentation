@@ -43,6 +43,10 @@ Il faut installer `yum install openvswitch-devel rdo-openvswitch-devel` et lance
 Configurer `/etc/neutron/neutron.conf` et parametrer `transport_url = rabbit://`. 
 Une fois, fonctionnel, grace à un sniffer on peut observer les échanges tagés par `AMQP 74 Heartbeat`.
 
+### keepalived perte de packets
+
+> There is a known bug with keepalived v1.2.15 and earlier which can cause packet loss when max_l3_agents_per_router is set to 3 or more. Therefore, we recommend that you upgrade to keepalived v1.2.16 or greater when using this feature. - [openstack](https://docs.openstack.org/neutron/ussuri/admin/deploy-ovs-ha-vrrp.html)
+
 ### auth_url
 
 ```
@@ -65,7 +69,6 @@ admin-openrc                                                                   1
 [root@os-gateway-1 ~]# . admin-openrc
 [root@os-gateway-1 ~]# neutron agent-list
 neutron CLI is deprecated and will be removed in the future. Use openstack CLI instead.
-public endpoint for network service not found
 ```
 
 Vous pouvez par la suite lancer les services.
