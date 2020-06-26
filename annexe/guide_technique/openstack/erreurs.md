@@ -30,6 +30,16 @@ verifier qu'il soit bien affecter à un role.
 
 ## Neutron
 
+### neutron-l3-agent : specify driver interface
+```
+ERROR specify driver interface
+```
+- verifier dans `/etc/neutron/l3-agent.ini` que `driver_interface = ` choix entre `openvswitch` , `linuxbridge`.
+- linker le plugin avec
+ ```
+ ln -s /etc/neutron/plugins/ml2/ml2_conf.ini /etc/neutron/plugin.ini
+ ```
+
 ### Could not retrieve schema from tcp:127.0.0.1:6640
 
 N'arrive pas à joindre ovsdbapp qui est un module python installé avec neutron.  
