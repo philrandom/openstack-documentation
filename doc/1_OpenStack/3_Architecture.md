@@ -94,8 +94,6 @@ L'architecture est composée de :
 
 ### Connexion NORD-SUD
 
-Il y a deux methodes pour gérer les failover.
-
 #### VRRP
 Le Virtual Routing Redundancy Protocol (VRRP) est un *first hop redundancy protocol* qui a pour but de garantir la HA aux niveaux des gateway.
 
