@@ -24,7 +24,7 @@
 
 `/doc` est composé en trois parties : `0_Intro/` , `1_OpenStack/` et `3_Conclusion/`. Dans `1_OpenStack/` s'y trouve une documentation orienté par les lignes directrices de `0_Intro/`. La section `3_Conclusion/` répond à la question posé en `0_Intro/`.
 
-## annexe
+## `annexe`
 
 Est composé en trois parties :
 - `assets/` : composé de fichiers de ressources présent dans `/doc`
