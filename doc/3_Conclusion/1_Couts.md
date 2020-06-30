@@ -2,7 +2,7 @@
 
 ## Migration : Hyperviseur
 
-Le scenario est le suivant l'hyperviseur principal est un cloud openstack. Alors la transition pourrait être effectué par un ou deux individus durant 6 mois (pour comprendre en profondeur la théorie)
+Le scenario est le suivant l'hyperviseur principal est un cloud openstack. Alors la transition pourrait être effectué par un ou deux individus durant 6 mois (pour comprendre de plus la théorie)
 
 ## Migration : IaaS total
 
