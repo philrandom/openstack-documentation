@@ -4,16 +4,6 @@
 
 ```
 .
-├── annexe
-│  ├── assets
-│  │  ├── modules.svg
-│  │  └── SDN.png
-│  ├── guide_technique
-│  │  ├── linux
-│  │  │  └── network-sys.md
-│  │  └── openstack
-│  │     └── install.md
-│  └── sources.md
 ├── doc
 │  ├── 0_Intro
 │  │  ├── 0_Presentation.md
