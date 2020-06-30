@@ -83,4 +83,9 @@ neutron CLI is deprecated and will be removed in the future. Use openstack CLI i
 
 Vous pouvez par la suite lancer les services.
 
+### privsep-helper
+Vous pouvez constater, que `privsep-helper`n'existe pas :
+- verifier son installation
+- verifier que `sudo privsep-helper`existe sinon ajouter le chemin vers le binaire dans `/etc/sudoer`
+
 
