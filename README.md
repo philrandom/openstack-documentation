@@ -4,16 +4,22 @@
 
 ```
 .
-├── doc
-│  ├── 0_Intro
+├── annexe/
+│  ├── assets/
+│  ├── guide_technique/
+│  │  ├── linux/
+│  │  └── openstack/
+│  └── sources.md
+├── doc/
+│  ├── 0_Intro/
 │  │  ├── 0_Presentation.md
 │  │  └── 1_Analyse_du_besoin.md
-│  ├── 1_OpenStack
+│  ├── 1_OpenStack/
 │  │  ├── 0_Intro.md
 │  │  ├── 1_Presentation_modules.md
 │  │  ├── 2_Analyse.md
 │  │  └── 3_Architecture.md
-│  └── 3_Conclusion
+│  └── 3_Conclusion/
 │     ├── 0_Critiques.md
 │     ├── 1_Couts.md
 │     └── 2_Conclusion.md
