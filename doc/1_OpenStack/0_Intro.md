@@ -31,7 +31,7 @@ Ici nous étudirons exclusivement l'IaaS qui répond particulièrement au besoin
 
 | Licence | Language | OS requis |
 |---------|----------|-----------|
-| Apache 2.0| Python | GNU/Linux |
+| Apache 2.0| Python | Linux     |
 
 
 OpenStack est un système de **cloud computing** qui aspirent à l'automatisation.
