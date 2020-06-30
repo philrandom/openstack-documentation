@@ -28,6 +28,22 @@ Les erreurs ne sont pas référencés avec leurs solutions.
 
 (operateur OpenStack ref. à l'equipe travaillant sur le cloud OpenStack en question)
 
+### Flexibilité
+OpenStack est conçu avec l'idée d'être scalable horizontalement. 
+Egalement de proposer plusieur plug in alternatif par example pour : 
+- le système dauthentification
+  - natif (sql)
+  - ldap
+  - ...
+- l'hyperviseur 
+  - kvm 
+  - qemu
+  - vmware
+  - ...
+- le stockage :
+  - stockage par block
+  - stockage d'objet
+
 ### Sécurité
 En 2018, OpenStack à subit beaucoup d'*exploits*. Depuis 2019, OpenStack à corrigé ces failles, et la communauté se mobilise vers la sécurité (source MISC Mag).  
 Autrement dit, la sécurité est assuré principalement par OpenStack. L'operateur n'a qu'a suivre la doc est choisir des mots de passes complexes.
