@@ -25,3 +25,4 @@
 [wikipedia (*title* : OpenvSwitch)](https://en.wikipedia.org/wiki/Open_vSwitch)  
 [wikipedia (*title* : OVN)](https://en.wikipedia.org/wiki/OVN)  
 [assafmuller.com (*title* : Layer 3 High Availability) VRRP](https://assafmuller.com/2014/08/16/layer-3-high-availability/)  
+[RedHat doc (*title* : VRRP scheduling)](https://access.redhat.com/webassets/avalon/d/Red_Hat_OpenStack_Platform-13-Networking_Guide-en-US/images/b7ab8afbc4b84ddb3f64c99135b7832f/vrrp-scheduling.png)
