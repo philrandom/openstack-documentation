@@ -134,6 +134,7 @@ Ce module à pour principal objectif de charger une image base sur une VM. Glanc
 Glance a besoin d'acceder à une base de données pour y stocké toutes les metadata concernant l'utilisation de ses images. 
 
 > **NOTE sur Glance (Ussuri)** Due à un [bug SSL sur python 3](https://bugs.launchpad.net/glance/+bug/1482633), la version stable de Glance s'execute en python 2.7.
+
 ## Neutron
 
 |catégorie  		|fonction							|
@@ -213,6 +214,11 @@ EXT-----(src:200.0.0.1;dest:80.0.0.2)--->ROUTER---(src:192.168.1.1;dest:192.168.
 ```
 
 ### Methode de Routage
+
+|Mechanism Driver	|flat |gre |vlan |vxlan |geneve|
+|-----------------------|-----|----|-----|------|------|
+|ovn			|yes  |no  |yes  |no    |yes   |
+|openvswitch		|yes  |yes |yes  |yes   |no    |
 
 #### OpenvSwitch (OVS)
 
