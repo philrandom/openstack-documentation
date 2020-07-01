@@ -246,7 +246,8 @@ Les Security Groups sont similaires à `iptables`.
 Contrairement au Security Group qui s'applique aux niveaux des Ports, le FW lui assure la sécurité au niveau du ROUTER. La FW policy fonctionne comme iptables avec un nom de référence. **Attention l'ordre des régles est importantes.**
 
 ### Recommendation de lecture
-[Openstack Neutron: L2 Networking In Depth](https://www.techblog.moebius.space/posts/2018-02-17-openstack-neutron-understanding-l2-networking-and-port-binding/)
+- [RedHat : openstack networking concepts](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_openstack_platform/7/html/networking_guide/openstack_networking_concepts)
+- [Openstack Neutron: L2 Networking In Depth and Port Binding](https://www.techblog.moebius.space/posts/2018-02-17-openstack-neutron-understanding-l2-networking-and-port-binding/)
 
 ## [Cinder](https://docs.openstack.org/cinder/latest/)
 
