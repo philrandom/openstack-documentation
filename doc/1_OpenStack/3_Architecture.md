@@ -94,7 +94,7 @@ L'architecture est composée de :
 
 ### Connexion NORD-SUD
 
-#### [VRRP](https://tools.ietf.org/html/rfc3768)
+#### VRRP [doc RedHat](https://access.redhat.com/documentation/en-us/red_hat_openstack_platform/13/html/networking_guide/sec-l3-ha) [rfc3768](https://tools.ietf.org/html/rfc3768)
 Le Virtual Routing Redundancy Protocol (VRRP) est un *first hop redundancy protocol* qui a pour but de garantir la HA aux niveaux des gateway.
 
 ![VRRP schema](../../annexe/assets/vrrp-scheduling.png)
