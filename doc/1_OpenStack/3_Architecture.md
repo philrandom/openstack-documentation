@@ -104,4 +104,7 @@ Le Virtual Routing Redundancy Protocol (VRRP) est un *first hop redundancy proto
 
 **Si l'un des routeurs perd la connectivité :** Premierement les routeurs possède des Virtual IP (VIP). Les routuers possèdes une VIP master. Les routeur fonctionnel envoie en continue un `hello` VRRP depuis leur VIP master aux autres routeurs.
 
-Pour la configuration des VRRP avec des *gateway node* distincts du *controller node* suivre [cette doc archi L3HA VRRP](https://docs.openstack.org/liberty/networking-guide/scenario-l3ha-ovs.html)
+**Limitation :**
+- L3 HA supporte jusqu'a 255 virtual router par tenant
+- Les message interne VRP sont transporter sur un reseau interne séparé, et créé automatiquement pour chaques projets. Ce processus est transparant pour les utilisateurs.
+
