@@ -84,7 +84,7 @@ Mineur :
 - Fault Tolerence : si un compute node meurt alors ses donnés sont perdu. Pour y remédier il suffit de faire du mirroring (duplication de donnés en temps réel) avec Cinder. Où faire des snapshot avec Swift toutes les intervallent de temps.
 
 
-## Solution : L3 HA Gateway + DVR OVS [doc OpenStack](https://docs.openstack.org/liberty/networking-guide/scenario-l3ha-ovs.html)
+## Solution : L3 HA Gateway VRRP OVS [doc OpenStack](https://docs.openstack.org/liberty/networking-guide/scenario-l3ha-ovs.html)
 
 ![title](../../annexe/assets/macro-architecture_alt.svg)  
 
