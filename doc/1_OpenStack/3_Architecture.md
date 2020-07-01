@@ -94,7 +94,7 @@ L'architecture est composée de :
 
 ### Connexion NORD-SUD
 
-#### VRRP
+#### [VRRP](https://tools.ietf.org/html/rfc3768)
 Le Virtual Routing Redundancy Protocol (VRRP) est un *first hop redundancy protocol* qui a pour but de garantir la HA aux niveaux des gateway.
 
 **Les possibilités** qu'offre cette methode est l'allégement en divisant la charge du trafic par le nombre de routeurs en assignant une partie des IP à un routeur précis. C'est le load sharing.  
