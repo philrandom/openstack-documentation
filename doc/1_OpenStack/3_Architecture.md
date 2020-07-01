@@ -35,10 +35,11 @@ Une des propositions, non détaillé ici, serait d'utiliser seulement un seul et
 Ici sont présenté l'architecture au sein des modules. Comment ils communiquent entre les différent sous modules.
 ### [Nova](https://docs.openstack.org/nova/ussuri/user/cellsv2-layout.html#service-layout)
 #### Simple
-![un compute node](../../annexe/assets/nova_simple.png)
+![un compute node](../../annexe/assets/nova_simple.png)  
+
 Cette architecture s'applique pour un seul *compute node*.  Tout les services communiquent entre eux par le même message bus, et il n'y a qu'une seul database cell.  La database `cell0` est toujours présente et requise.
 #### Multiple Cells
-![plusieurs compute node](../../annexe/assets/nova_multiple.png)
+![plusieurs compute node](../../annexe/assets/nova_multiple.png)  
 > *Remarque* l'architecture est similaire à la premiere, car en effet elle est une extension au niveau du *condutor*. 
 
 Les messages bus sont séparé en fonction des cells. Le **super-conductor** à acces à l'API.  
@@ -46,7 +47,7 @@ Les messages bus sont séparé en fonction des cells. Le **super-conductor** à 
 
 ## Solution : architecture DVR OpenvSwitch
 
-![title](../../annexe/assets/macro-architecture.svg)
+![title](../../annexe/assets/macro-architecture.svg)  
 
 L'architecture est composée de :
 - 1 Controle-Node (ici appelé *Ground Control*) : il gère la majeur partie avec l'authentification, etc...
@@ -83,9 +84,9 @@ Mineur :
 - Fault Tolerence : si un compute node meurt alors ses donnés sont perdu. Pour y remédier il suffit de faire du mirroring (duplication de donnés en temps réel) avec Cinder. Où faire des snapshot avec Swift toutes les intervallent de temps.
 
 
-## Solution : L3 HA Gateway + DVR OVS
+## Solution : L3 HA Gateway + DVR OVS [doc OpenStack](https://docs.openstack.org/liberty/networking-guide/scenario-l3ha-ovs.html)
 
-![title](../../annexe/assets/macro-architecture_alt.svg)
+![title](../../annexe/assets/macro-architecture_alt.svg)  
 
 L'architecture est composée de :
 - un centre de contrôle, ici appelé *Ground Control* : gère les authentifications et toutes autres tâches relatives à la gestion d'OpenStack
@@ -95,10 +96,10 @@ L'architecture est composée de :
 ### Connexion NORD-SUD
 
 #### VRRP [doc RedHat](https://access.redhat.com/documentation/en-us/red_hat_openstack_platform/13/html/networking_guide/sec-l3-ha) / [rfc3768](https://tools.ietf.org/html/rfc3768)
+
 Le Virtual Routing Redundancy Protocol (VRRP) est un *first hop redundancy protocol* qui a pour but de garantir la HA aux niveaux des gateway.
 
-![VRRP schema](../../annexe/assets/vrrp-scheduling.png)
-
+![VRRP schema](../../annexe/assets/vrrp-scheduling.png)  
 
 **Les possibilités** qu'offre cette methode est l'allégement en divisant la charge du trafic par le nombre de routeurs en assignant une partie des IP à un routeur précis. C'est le load sharing.  
 
@@ -108,3 +109,5 @@ Le Virtual Routing Redundancy Protocol (VRRP) est un *first hop redundancy proto
 - L3 HA supporte jusqu'a 255 virtual router par tenant
 - Les message interne VRP sont transporter sur un reseau interne séparé, et créé automatiquement pour chaques projets. Ce processus est transparant pour les utilisateurs.
 
+### Securité
+Notons la présence de deux réseaux rouge et vert, ici. Le **rouge** est exclusivement réservée aux communications administratives. Tandis que le **vert** lui est reservé pour les connexions des instances et accés à internet. Ainsi la surface d'attaque est réduite pour un attaquant se situant dans une instance. 
