@@ -245,6 +245,8 @@ Les Security Groups sont similaires à `iptables`.
 **Prérequis** il faut pour faire un FWaaS avec neutron certaines fonctionnalités, ici Open vSwitch (implementation de distrubution virtuel multilayer switch) et activer ML2 (autorise Neutron à utiliser la couche 2 du modèle OSIS). Le paramétrage se fait via au fichiers de configurations.  
 Contrairement au Security Group qui s'applique aux niveaux des Ports, le FW lui assure la sécurité au niveau du ROUTER. La FW policy fonctionne comme iptables avec un nom de référence. **Attention l'ordre des régles est importantes.**
 
+### Recommendation de lecture
+[Openstack Neutron: L2 Networking In Depth](https://www.techblog.moebius.space/posts/2018-02-17-openstack-neutron-understanding-l2-networking-and-port-binding/)
 
 ## [Cinder](https://docs.openstack.org/cinder/latest/)
 
