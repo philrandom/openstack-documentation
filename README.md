@@ -37,3 +37,5 @@ Est composé en trois parties :
 - `guide_technique/` : tutoriel technique sur OpenStack
 - `sources.md` : référence de toutes les ressources utilisés non répertorié dans `/doc`
 
+## `/notes`
+Comporte toutes les prise de notes, et création de script de déploiement (non fonctionnel)
