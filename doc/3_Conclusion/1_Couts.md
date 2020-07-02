@@ -14,7 +14,7 @@ L'interret est le suivant : toute l'equipe connait le produit et l'infrastructur
 ## Recommandation de mise en production
 
 - deploiement :
-  - TripleO : deploiement d'openstack sur OpenStack
-  - Ansible
+  - TripleO : deploiement d'OpenStack sur OpenStack
+  - Ansible : automatisation de deploiement
 - securité :
-  - Docker : lancement des services/demons openstack dans des conteneurs.
+  - Docker : lancement des services/demons openstack dans des conteneurs
