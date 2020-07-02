@@ -31,3 +31,5 @@ Liste disponibles des entreprises partenaires et agrées par openstack pour le d
   - Ansible : automatisation de deploiement. (voir `openstack-ansible`)
 - Securité :
   - Docker : lancement des services/demons openstack dans des conteneurs (recommandation RedHat)
+
+Voir `/annexe/documentations_officielles.md` pour les documentations officielles.
