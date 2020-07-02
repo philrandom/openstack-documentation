@@ -111,3 +111,6 @@ Le Virtual Routing Redundancy Protocol (VRRP) est un *first hop redundancy proto
 
 ### Securité
 Notons la présence de deux réseaux rouge et vert, ici. Le **rouge** est exclusivement réservée aux communications administratives. Tandis que le **vert** lui est reservé pour les connexions des instances et accés à internet. Ainsi la surface d'attaque est réduite pour un attaquant se situant dans une instance ou à l'exterieur.
+
+### Production
+L'architecture requière d'utilisé les *stockage nodes* pour respecter la HA.
