@@ -46,5 +46,6 @@ Vous êtes autorisé à :
 - **Partager** — copier, distribuer et communiquer le matériel par tous moyens et sous tous formats
 - **Adapter** — remixer, transformer et créer à partir du matériel
 pour toute utilisation, y compris commerciale.  
+
 L'Offrant ne peut retirer les autorisations concédées par la licence tant que vous appliquez les termes de cette licence.  
   
