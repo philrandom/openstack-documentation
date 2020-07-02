@@ -9,7 +9,7 @@
 │  ├── guide_technique/
 │  │  ├── linux/
 │  │  └── openstack/
-|  ├── references_de_documentations.md
+|  ├── documentations_officielles.md
 │  └── sources.md
 ├── doc/
 │  ├── 0_Intro/
@@ -37,7 +37,7 @@ Est composé en trois parties :
 - `assets/` : composé de fichiers de ressources présent dans `/doc`
 - `guide_technique/` : tutoriel technique sur OpenStack
 - `sources.md` : référence de toutes les ressources utilisés non répertorié dans `/doc`
-- `references_de_documentations.md` : comporte toutes les documentations officielles pour une installation
+- `documentations_officielles.md` : comporte toutes les documentations officielles pour une installation
 
 ## `/notes`
 Comporte toutes les prise de notes, et création de script de déploiement (non fonctionnel)
