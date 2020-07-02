@@ -39,3 +39,10 @@ Est composé en trois parties :
 
 ## `/notes`
 Comporte toutes les prise de notes, et création de script de déploiement (non fonctionnel)
+
+# Licence
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a>  
+Vous êtes autorisé à :  
+- **Partager** — copier, distribuer et communiquer le matériel par tous moyens et sous tous formats
+- **Adapter** — remixer, transformer et créer à partir du matériel
+pour toute utilisation, y compris commerciale.
