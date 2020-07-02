@@ -18,7 +18,7 @@ Dans un premiers temps, déployer OpenStack en tant que **IaaS hyperviseur** ré
 ## Réponse
 
 Pour réspondre à la question posé dans `/doc/0_Intro/1_Analyse.md` : 
-> Définir la pertinence de l'utilisation future d'OpenStack en IaaS (d'hypervision) pour l'université de Limoges ?
+> Définir la pertinence de l'utilisation future d'OpenStack en IaaS (hyperviseur) pour l'université de Limoges ?
 
 Réponse :
 
