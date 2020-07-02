@@ -21,6 +21,7 @@ L'interret est le suivant :
 L'entreprise française Objectif Libre propose des [formations](https://www.objectif-libre.com/fr/formations/catalogue-des-formations-linux-cloud-et-logiciels-libres/#1506501242999-4333ab50-e729) sur OpenStack.
 SUSE propose les [déploiements](https://www.suse.com/fr-fr/products/suse-openstack-cloud/).
 
+Liste disponibles des entreprises partenaires et agrées par openstack pour le deploiement de cloud [ici](https://www.openstack.org/marketplace/hosted-private-clouds/)
 
 
 ## Recommandation de mise en production
