@@ -268,7 +268,7 @@ Cinder est un Block Storage similaire à un filesystem classique, principalement
 - Fault-Tolerence : insensibilité aux pannes 
 - Recoverable : prévient et maintient facilement les failles dû aux disques
 
-> Par conséquent les donnés ne sont pas consistante.
+> Par conséquent les donnés ne sont pas consistantes.
 
 ## Swift
 |catégorie  		|fonction							|
@@ -278,7 +278,7 @@ Cinder est un Block Storage similaire à un filesystem classique, principalement
 À la différence de Cinder utilisant le stockage de block (comme un filesystem), Swift utilise le stockage d'objet. Le stockage d'objet permet de sérialisé des structures avec des pointages de donnés vers des fichiers.  
 
 Un cas concret peut être l'utilisation au seins d'un drive où un objet représente un utilisateur pour y stocké toutes les versions de chaque fichiers. Via des intégrations en PHP (`php-opencloud`), ruby (`ruby-openstack library`), Java (`jclouds library`) et Pyhton (`python-swiftclient`)  on peut ainsi utiliser OpenStack comme un drive.  
-Au seins d'OpenStack les objets peuvent aussi stocké tout un projet avec sa topologie d'un réseaux, ses adresses, ses VM ... Pour déployé une backup à partir d'une snapshot de tout le projet. [Voir doc : Back up and restore volumes and snapshots](https://docs.openstack.org/cinder/latest/admin/blockstorage-volume-backups.html) Pour le bon fonctionnement d'une restauration Swift travail avec Cinder.
+Au seins d'OpenStack les objets peuvent aussi stocké tout un projet avec sa topologie d'un réseaux, ses adresses, ses VM ... Pour déployer une backup à partir d'une snapshot de tout le projet. [Voir doc : Back up and restore volumes and snapshots](https://docs.openstack.org/cinder/latest/admin/blockstorage-volume-backups.html) Pour le bon fonctionnement d'une restauration Swift travail avec Cinder.
 
 ## Aodh
 |catégorie  		|fonction							|
