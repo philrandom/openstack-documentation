@@ -13,3 +13,13 @@ OpenStack IaaS hyperviseur -> OpenStack IaaS total
 ```
 
 Dans un premiers temps, déployer OpenStack en tant que **IaaS hyperviseur** réglera les problèmes des creations d'instances automatisés pour les utilisateurs. La migration vers OpenStack en IaaS hyperviseur est une opération non-complexe. Par la suite développer le cloud d'OpenStack vers une **IaaS total** s'avera être une opération non-compexe. 
+
+
+## Réponse
+
+Pour réspondre à la question posé dans `/doc/0_Intro/1_Analyse.md` : 
+> Définir la pertinence de l'utilisation future d'OpenStack en IaaS (d'hypervision) pour l'université de Limoges ?
+
+Réponse :
+
+> Oui.
