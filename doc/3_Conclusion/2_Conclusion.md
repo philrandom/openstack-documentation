@@ -23,3 +23,7 @@ Pour réspondre à la question posé dans `/doc/0_Intro/1_Analyse.md` :
 Réponse :
 
 > Oui.
+
+
+## Statistique
+statistique d'utilisation d'OpenStack [2017 OpenStak user survey](https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/survey/April2017SurveyReport.pdf)
