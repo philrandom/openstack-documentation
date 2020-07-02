@@ -15,6 +15,14 @@ L'interret est le suivant :
   - une consultation global pour l'architecture, avec l'expertise de chacun pour peremettre une optimisation.
 - L'infrastructure est homogène, ce qui tend vers une cohésion, et ainsi améliorer la qualité.
 
+## Appel à un tierce
+
+55% des cloud OpenStack utilise ubuntu, avec le support fournit par Cannonical. Voir le [calculateur TCO(total cost of ownership)](https://ubuntu.com/tco-calculator) pour un cloud privé. Egalement RedHat propose des [déploiements de cloud](https://access.redhat.com/products/red-hat-openstack-platform/#whatsnew) et des [formations avec certifications](https://www.redhat.com/en/services/certification/rhcsa-rhos?cr=cp|tr|pp|00002&).
+L'entreprise française Objectif Libre propose des [formations](https://www.objectif-libre.com/fr/formations/catalogue-des-formations-linux-cloud-et-logiciels-libres/#1506501242999-4333ab50-e729) sur OpenStack.
+SUSE propose les [déploiements](https://www.suse.com/fr-fr/products/suse-openstack-cloud/).
+
+
+
 ## Recommandation de mise en production
 
 - Déploiement :
