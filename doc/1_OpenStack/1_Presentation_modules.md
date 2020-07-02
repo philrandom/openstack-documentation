@@ -1,6 +1,6 @@
 # Présentation Modules
 
-OpenStack est basé sur une architecture modulaire. Chaque module communique entre eux via des API. Certains peuvent avoir un rôle fonctionnel au seins d'OpenStack (_ex_ : authentification, gestion réseaux, facturation), et d'autre peuvent également interagir avec des logicielles (_ex_ : Nova interagit avec VirtualBox).
+OpenStack est basé sur une architecture modulaire. Chaque module communique entre eux via des API. Certains peuvent avoir un rôle fonctionnel au seins d'OpenStack (_ex_ : authentification, gestion réseaux, facturation), et d'autre peuvent également interagir avec des logicielles (_ex_ : Nova interagit avec QEMU).
 
 _Vocabulaire_ : les **core modules** sont les modules définis comme essentiel. Historiquement ce sont les premiers modules qui sont apparus, sans lequel OpenStack ne pourra pas fonctionner. Au cours du développement ce terme est devenu plus flous.
 
@@ -51,19 +51,19 @@ Il existe [deux types de `token`](https://docs.openstack.org/keystone/pike/admin
 En bref, Fernet garantie une meilleur **scalability**.
 
 ### Identification
-Le fonctionnement de l'identification se comporte de tel manière : les `users` appartiennent à un `groups` qui appartient à un `domain`. Les `projects` appartiennent à un `domains`.
+Le fonctionnement de l'identification se comporte de cette façon : les `users` appartiennent à un `groups` qui appartient à un `domain`. Les `projects` appartiennent à un `domains`.
 Les ressources sont définis lors de la definition du `project` et de `domain`
 
 ### Role
-Le rôle définit le niveau d'autorisation, il existe les rôles suivants :
+Le rôle définit le niveau d'autorisation; il existe les rôles suivants :
 - `admin` qui est le super utilisateur de tout l'ensemble OpenStack
 - `_member_` un utilisateur lambda avec peu de droits
 - d'autre rôle peuvent être créer notement en tant que Operateur d'un module (ex: SwiftOperator)
 
 ## Nova
-|catégorie  		|fonction							|
+|catégorie  			|fonction							|
 |---				|---								|
-|calcul				|gestion de l'hyperviseur			|
+|calcul				|gestion de l'hyperviseur					|
 
 Est le module qui prépare la machine virtuelle et qui gère l'hyperviseur. Au niveau de l'**architecture** Nova communique en REST API pour l'interface utilisateur (cli, horizon, ...) ce qui utilise la base de donné partagée avec les autres modules, mais pour les communications internes Nova utilise les appels [RPC](https://docs.openstack.org/nova/latest/reference/rpc.html). Nova possède la fonctionnalité du déploiement horizontal, nommé [Cells](https://docs.openstack.org/nova/latest/user/cells.html).
 
@@ -87,14 +87,14 @@ Pour choisir un hyperviseur, veillez consulter [ce tableau qui traite sur les di
 
 > **Attention** il est important de noter que la migration des instances entre les *compute nodes* n'est pas encore supporté (version Ussuri). [voir ici](https://docs.openstack.org/nova/ussuri/user/cellsv2-layout.html#cross-cell-instance-migrations)
 
-Des option avancé sont [disponible](https://docs.openstack.org/nova/ussuri/admin/index.html) comme l'utilisation de GPU, securisation, topologie CPU....
+Des options avancés sont [disponible ici](https://docs.openstack.org/nova/ussuri/admin/index.html) comme l'utilisation de GPU, securisation, topologie CPU....
 
 ### Organisation
 
 Nova est organisé de la sorte :
-- `nova-api` gère les REST API exterieur de nova, autement dit gère les interractionavec les autres modules et les utilisateurs.
-- `nova-scheduler` et `placement` sont les services responsablent du tracking des ressources et des decision d'execution.
-- *API database* utilisé par `nova-api` et `nova-scheduler`, conserve des information concernant les instances comme la location (sur quel compute node est executé telle instance) et les instances futures. 
+- `nova-api` gère les REST API exterieurs de nova, autement dit gère les interractions avec les autres modules et les utilisateurs.
+- `nova-scheduler` et `placement` sont les services responsablent du tracking des ressources et des decisions d'executions.
+- *API database* utilisé par `nova-api` et `nova-scheduler`, conserve des informations concernant les instances comme la location (sur quel compute node est executé telle instance) et les instances futures. 
 - `nova-conductor` 
 - `nova-compute` gère les *virt driver* et les hyperviseur.
 - *cell database* est utilisée par l'API, le *nova-conductor* et *nova-compute*, enregistre la major partie des informations à propos des instances.
@@ -102,19 +102,19 @@ Nova est organisé de la sorte :
 - *message queue* permet la communication au sein de nova via RPC.
 
 ## Placement
-|catégorie  		|fonction							|
+|catégorie  			|fonction								|
 |---				|---								|
-|service partagé	|allocation de ressources			|
+|service partagé		|allocation de ressources						|
 
 
 Placement est un module extrait de **Nova** depuis la version Stein. Il est definit comme un core module. En effet, son rôle premier est l'allocation en tout genre que ce soit cpu, memoire, espace de stockage, ou même ip.
 
 ## Glance
-|catégorie  		|fonction							|
+|catégorie  			|fonction							|
 |---				|---								|
-|service partagé	|management d'image pour VM			|
+|service partagé		|management d'image pour VM					|
 
-Ce module à pour principal objectif de charger une image base sur une VM. Glance ne stock pas les images; les images peuvent être stocké simplement sur le `filesystem` ou via Swift (module détaillé plus bas). Des images pre-built officielles sont [disponnible](https://docs.openstack.org/image-guide/obtain-images.html).
+Ce module à pour principal objectif de charger une image base sur une VM. Glance ne stock pas les images; les images peuvent être stocké simplement sur le `filesystem` ou via Swift (module détaillé plus bas). Des images pre-built officielles sont [disponnible ici](https://docs.openstack.org/image-guide/obtain-images.html).
 
 | OS/distribution 		|  lien | login |
 |-----------------		|-------|-------|
@@ -137,11 +137,11 @@ Glance a besoin d'acceder à une base de données pour y stocké toutes les meta
 
 ## Neutron
 
-|catégorie  		|fonction							|
+|catégorie  			|fonction							|
 |---				|---								|
-|réseaux			|software-defined networking (SDN)	|
+|réseaux			|software-defined networking (SDN)				|
 
-Neutron est responsable de la définition du réseaux pour les VM. Il leur assigne une IP. Mais également il peut gérer les connexion entres les VM. Neutron est aussi spécialisé dans le VPNaaS, FWaaS (FireWall-as-a-Service), et le LBaaS (LoadBalancing-as-a-Service). Il fonctionne sur du SDN (software-defined networking), utilisé en milieu de cloud-computing, il tend à séparer le trafic réseaux en trois couche :
+Neutron est responsable de la définition du réseaux pour les VM. Il leur assigne une IP. Mais également il peut gérer les connexion entre les VM. Neutron est aussi spécialisé dans le VPNaaS, FWaaS (FireWall-as-a-Service), et le LBaaS (LoadBalancing-as-a-Service). Il fonctionne sur du SDN (software-defined networking), utilisé en milieu de cloud-computing, il tend à séparer le trafic réseaux en trois couche :
 - management plane : interface utilisateur pour la gestion
 - controle plane : protocole de routage et décision du traitement
 - data plane : traitement des paquets
@@ -153,7 +153,7 @@ Neutron est responsable de la définition du réseaux pour les VM. Il leur assig
 ### Composition
 Neutron s'organise en plusieurs composants : 
 - `neutron-server` acccepte et route les requette API au bon Network plug-in.
-- **Openstack networking plug-in agent** permet la creation des `networks` et `subnets`, des plu et unplug les ports. les agents varient en fonction de la methode utilisé linux bridges, Open vSwitch, OVN... Les agents les plus communs sont L3, DHCP.
+- **Openstack networking plug-in agent** permet la creation des `networks` et `subnets`, pour plug et unplug les ports aux networks et les interfaces. les agents varient en fonction de la methode utilisé linux bridges, Open vSwitch, OVN... Les agents les plus communs sont L3, DHCP.
 - *Message queue* permet la communication entre `neutron-server` et plusieurs autres agents. Egalement peut être utilisé comme database pour enregistrer l'etat du réseau.
 
 ### Architecture
