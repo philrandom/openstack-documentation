@@ -103,7 +103,7 @@ Nova est organisé de la sorte :
 
 ## Placement
 |catégorie  			|fonction								|
-|---				|---								|
+|---				|---									|
 |service partagé		|allocation de ressources						|
 
 
@@ -154,26 +154,27 @@ Neutron est responsable de la définition du réseaux pour les VM. Il leur assig
 Neutron s'organise en plusieurs composants : 
 - `neutron-server` acccepte et route les requette API au bon Network plug-in.
 - **Openstack networking plug-in agent** permet la creation des `networks` et `subnets`, pour plug et unplug les ports aux networks et les interfaces. les agents varient en fonction de la methode utilisé linux bridges, Open vSwitch, OVN... Les agents les plus communs sont L3, DHCP.
-- *Message queue* permet la communication entre `neutron-server` et plusieurs autres agents. Egalement peut être utilisé comme database pour enregistrer l'etat du réseau.
+- *Message queue* permet la communication entre `neutron-server` et plusieurs autres agents. Egalement peut être utilisé comme database pour enregistrer l'état du réseau.
 
 ### Architecture
-**NETWORK** est comparable à un réseaux VLAN dans les réseaux classiques mais avec plus de flexibilité. Le VLAN est une logique de découpage qui permet notamment de séparer deux différent VLAN se trouvant sur le même réseaux. Chaque réseaux VLAN à son domaine de broadcast d'associé. De manière similaire les NETWORK sous OpenStack associé un broadcast à chaque réseaux.  
-La séparation des NETWORKS est appelé **méthode de segmentation**. OpenStack embarque avec lui plusieurs méthode comme :
+**NETWORK** est comparable à un réseaux VLAN dans les réseaux classiques mais avec plus de flexibilité. Le VLAN est une logique de découpage qui permet notamment de séparer deux différent VLAN se trouvant sur le même réseaux. Chaque réseaux VLAN à son domaine de broadcast d'associé. De manière similaire les NETWORK sous OpenStack associé un broadcast à chaque SUBNETS.  
+La séparation des NETWORKS utilise les **méthodes de segmentations**. OpenStack embarque avec lui plusieurs méthode comme :
 - VLAN
-- [VXLAN](https://tools.ietf.org/html/rfc7348) même principe que VLAN; avec 16 millions d'adresse possible
+- [VXLAN](https://tools.ietf.org/html/rfc7348) même principe que VLAN; avec 16 millions d'adresses possibles
 - GRE
 - Network Namespaces
 - OpenFlow Rules
 
-Lorsqu'un NETWORK est crée alors un **SUBNET** lui est automatiquement associé. Le SUBNET est une couche qui definit les adressages des VM présent sur le NETWORK. Par défaut un server DHCP est lancé, mangé par l'agent dhcp de Neutron.
+Lorsqu'un NETWORK est crée alors un **SUBNET** lui est automatiquement associé. Le SUBNET est une couche qui definit les adressages des VM présent sur le NETWORK. Par défaut un server DHCP est lancé, managé par l'agent dhcp de Neutron.
 Une fois le NETWORK spécifié des VM peuvent être créer par le module Nova.  
 
 Les **Ports** au seins du réseaux différent des ports classiques. Ici un Port est associé à un service du serveur. En effet il se presente sous cette forme : 
 
-|  			|Name 		| Fixed IP	|Attached Device	 		| Status 	|
-|---		|---		|---		|---						|---		|
+|  		|Name 		| Fixed IP	|Attached Device	 		| Status 	|
+|---		|---		|---		|---					|---		|
 |**format**	|hash		|IPv4		|ex: network:dhcp 			| Active/Inactive|
 
+Les ports [openstack] sont ceux qui lie une instance au network.
 
 Pour connecter deux NETWORK entre eux il faut liée via un **ROUTER** virtuelle au seins d'OpenStack. Tout comme les VM le ROUTER est connecté à un port du NETWORK. Son `attached device` est `network:router_interface_distributed`. Le ROUTER permet la connexion avec l'extérieur en spécifiant le gateway.  
 
@@ -221,6 +222,10 @@ EXT-----(src:200.0.0.1;dest:80.0.0.2)--->ROUTER---(src:192.168.1.1;dest:192.168.
 |openvswitch		|yes  |yes |yes  |yes   |no    |
 
 #### OpenvSwitch (OVS)
+OVS est la methode de routage stable sur OpenStack, et présente plusieurs features, dont le DVR (distributed virtual routing definit dans `/doc/1_OpenStack/2_Architecture.md`).
+OVS utilise des interfaces avec un système de bridge.
+
+En 2020, il est encore recommander pour le déploiement.
 
 #### Open Virtual Network (OVN)
 OVN est censé être le successeur de OVS. Autrement dit la future méthode de routage. Mais pour le moment OVN n'est pas stable et manque beaucoup de features. 
@@ -231,19 +236,26 @@ Les features disponibles sont :
 - Native support for NAT, load-balancing, and DHCP
 - L2 and L3 gateways
 
+En 2020, OVN n'est pas encore recommandé. Pour des Opérateurs avancé il peut se présenté comme un module intérréssant.
+
+#### LinuxBridge
+Utilise les interfaces avec un système de bridge. Il est souvent couplé avec l'une des deux méthodes précédentes.
+
 ### Sécurité
 
 #### Security Group
 
-Les **Security Group** sont des lois de sécurité et de contrôle appliqué aux niveaux des ports référencé par un nom. On peut ainsi filtré les connections entrantes dit `ingress` et les connections externes dit `egress` en fonction des protocoles comme TCP,UDP, ICMP etc.  
+Les **Security Group** sont des lois de sécurité et de contrôle appliquées aux niveaux des ports référencés par un nom. On peut ainsi filtrer les connections entrantes dit `ingress` et les connections externes dit `egress` en fonction des protocoles comme TCP,UDP, ICMP etc.  
 Les notations autorisés sont **Classless Inter-Domain Routing (CIDR)** (ex:192.168.1.0/24) où 0.0.0.0/0 pour toutes les IP.
 
 Les Security Groups sont similaires à `iptables`.
 
-#### Neutron FWaaS
+#### Neutron [FWaaS](https://docs.openstack.org/neutron/stein/admin/fwaas.html)
 
 **Prérequis** il faut pour faire un FWaaS avec neutron certaines fonctionnalités, ici Open vSwitch (implementation de distrubution virtuel multilayer switch) et activer ML2 (autorise Neutron à utiliser la couche 2 du modèle OSIS). Le paramétrage se fait via au fichiers de configurations.  
 Contrairement au Security Group qui s'applique aux niveaux des Ports, le FW lui assure la sécurité au niveau du ROUTER. La FW policy fonctionne comme iptables avec un nom de référence. **Attention l'ordre des régles est importantes.**
+
+Une bonne architecture général simple, permettra de mettre en place des régles claires et sans répétitions ou incompatibilités. Ex : un routeur pour l'axe NORD-SUD (FW concentré sur les connexion EXT) et les routeurs EST-OUEST (FW concentré sur les connexion internes).
 
 ### Recommendation de lecture
 - [RedHat : openstack networking concepts](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_openstack_platform/7/html/networking_guide/openstack_networking_concepts)
