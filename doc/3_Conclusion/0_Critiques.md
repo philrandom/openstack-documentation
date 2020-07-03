@@ -49,7 +49,7 @@ En 2018, OpenStack à subit beaucoup d'*exploits*. Depuis 2019, OpenStack à cor
 Autrement dit, la sécurité est assuré principalement par OpenStack. L'operateur n'a qu'a suivre la doc est choisir des mots de passes complexes.
 
 ### Liberté
-Le produit est opensource. Il est donc utilisable sans faire appel à un tierce. Il possible de faire appel à un tierce comme RedHat, Cannonical ... et autres entreprtises membres du projet. Par la même occasion il est possible de changer de fournisseur ci l'actuel ne convient pas.  
+Le produit est **opensource**, avec la possibilité de scriptage sous python. Il est donc utilisable sans faire appel à un tierce. Il possible de faire appel à un tierce comme RedHat, Cannonical ... et autres entreprtises membres du projet. Par la même occasion il est possible de changer de fournisseur ci l'actuel ne convient pas.  
 Si le choix suivant est l'independence, alors il n'y a pas de coûts dirrect en licence ou autres. Par contre, l'utilisation du produit se limite aux compétences de l'equipe, surtout lorsqu'il faut faire face à un problème d'instabilité.
 
 ### Polyvalence
