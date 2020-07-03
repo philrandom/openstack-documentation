@@ -14,7 +14,7 @@ Création d'un cloud en Infrastructure-as-a-Service (IaaS) :
 
 - Interface de gestion des instances/projets de manière user-friendly
 - Gestion des ressources automatique
-- Facturatio d'utilisation / mesure d'utilisation par "projet"
+- Facturation d'utilisation / mesure d'utilisation par "projet"
 - Gestion simplifiée de l'adressage / allocation des IP
 - Deploiement/connection Firewall simplifié
 
